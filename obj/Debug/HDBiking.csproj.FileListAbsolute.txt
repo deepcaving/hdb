@@ -1,0 +1,15 @@
+D:\Visual Studio 2010 Professional\Projects\wap.HDBiking\HDBiking\bin\HDBiking.dll
+D:\Visual Studio 2010 Professional\Projects\wap.HDBiking\HDBiking\bin\HDBiking.pdb
+D:\Visual Studio 2010 Professional\Projects\wap.HDBiking\HDBiking\obj\Debug\ResolveAssemblyReference.cache
+D:\Visual Studio 2010 Professional\Projects\wap.HDBiking\HDBiking\obj\Debug\HDBiking.dll
+D:\Visual Studio 2010 Professional\Projects\wap.HDBiking\HDBiking\obj\Debug\HDBiking.pdb
+D:\Visual Studio 2010 Professional\Projects\HDBiking\HDBiking\bin\HDBiking.dll
+D:\Visual Studio 2010 Professional\Projects\HDBiking\HDBiking\bin\HDBiking.pdb
+D:\Visual Studio 2010 Professional\Projects\HDBiking\HDBiking\obj\Debug\ResolveAssemblyReference.cache
+D:\Visual Studio 2010 Professional\Projects\HDBiking\HDBiking\obj\Debug\HDBiking.dll
+D:\Visual Studio 2010 Professional\Projects\HDBiking\HDBiking\obj\Debug\HDBiking.pdb
+D:\Visual Studio 2010 Professional\Projects\HDBiking with Flag not working - compilation error\HDBiking\bin\HDBiking.dll
+D:\Visual Studio 2010 Professional\Projects\HDBiking with Flag not working - compilation error\HDBiking\bin\HDBiking.pdb
+D:\Visual Studio 2010 Professional\Projects\HDBiking with Flag not working - compilation error\HDBiking\obj\Debug\ResolveAssemblyReference.cache
+D:\Visual Studio 2010 Professional\Projects\HDBiking with Flag not working - compilation error\HDBiking\obj\Debug\HDBiking.dll
+D:\Visual Studio 2010 Professional\Projects\HDBiking with Flag not working - compilation error\HDBiking\obj\Debug\HDBiking.pdb

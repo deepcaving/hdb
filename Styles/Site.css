@@ -1,0 +1,537 @@
+﻿/* DEFAULTS
+----------------------------------------------------------*/
+
+body   
+{
+    background: #FFFFFF;/* origina color: b6b7bc. Oppure prova anche ECFBFF*/
+    margin: 0px;
+    padding: 0px;
+}
+
+a:link, a:visited
+{
+    color: #034af3;
+}
+
+a:hover
+{
+    color: #1d60ff;
+    text-decoration: none;
+}
+
+a:active
+{
+    color: #034af3;
+}
+
+p
+{
+    margin-bottom: 10px;
+    line-height: 1.6em;
+    font-size: 1.0em;
+    font-family: Verdana;
+}
+
+/* HEADINGS   
+----------------------------------------------------------*/
+
+h1, h2, h3, h4, h5, h6
+{
+    font-size: 1.5em;
+    color: #666666;
+    font-variant: small-caps;
+    text-transform: none;
+    font-weight: 200;
+    margin-bottom: 0px;
+    font-family: Verdana;
+}
+
+h1
+{
+    font-size: 1.8em;
+    padding-bottom: 0px;
+    margin-bottom: 5px;
+}
+
+h2
+{
+    font-size: 1.5em;
+    /*font-weight: 600;*/
+}
+
+h3
+{
+    font-size: 1.2em;
+}
+
+h4
+{
+    font-size: 1.1em;
+}
+
+h5, h6
+{
+    font-size: 1em;
+}
+
+/* this rule styles <h1> and <h2> tags that are the 
+first child of the left and right table columns */
+.rightColumn > h1, .rightColumn > h2, .leftColumn > h1, .leftColumn > h2
+{
+    margin-top: 0px;
+}
+
+
+/* PRIMARY LAYOUT ELEMENTS   
+----------------------------------------------------------*/
+
+.page
+{
+    width: 960px;
+    background-color: #fff;
+    margin: 20px auto 0px auto;
+    border: 1px solid #496077;
+}
+
+.backgroundImage
+{
+	background-image:url(~/Images/background.jpg);
+}
+
+.backgroundColor
+{
+	background-color: #ffffff;
+}
+
+.header
+{
+    position: relative;
+    margin: 0px;
+    padding: 0px;
+    background: #E8F7E4;
+    width: 100%;
+    height: 95px;/*aggiunto*/
+}
+
+.header h1
+{
+    font-weight: 700;
+    margin: 0px;
+    padding: 0px 0px 0px 20px;
+    color: #f9f9f9;
+    border: none;
+    line-height: 2em;
+    font-size: 2em;
+}
+
+.main
+{
+    padding: 0px 12px;
+    margin: 12px 8px 8px 8px;
+    min-height: 420px;
+}
+
+.leftCol
+{
+    padding: 6px 0px;
+    margin: 12px 8px 8px 8px;
+    width: 200px;
+    min-height: 200px;
+}
+
+.footer
+{
+    color: #4e5766;
+    padding: 8px 0px 0px 0px;
+    margin: 0px auto;
+    text-align: center;
+    line-height: normal;
+}
+.container
+{
+	text-align: left;
+	width: 100%;
+}
+
+.modalBackground
+{
+	background-color:Gray;
+	filter:Alpha(Opacity=70);
+	opacity:0.7;	
+}
+
+.modalPopup
+{
+	background-color: #ffffdd;
+	border-width: 3px;
+	border-style: solid;
+	border-color: Gray;
+	padding: 3px;
+	width: 250px;
+}
+
+.hr 
+{
+    color: #C3C3C3;
+    border-top: 1px dashed #A3FF5B; /*FFF4FF*/
+    width: 296%; 
+    height: 1px;
+}
+/*il seguente si applica a un div che porta il nome (id) tableDafault. td rappresenta la table row contenuta nella tabella contenuta nel div*/
+.tdDefaultPage
+{
+    width: 2800px;
+    vertical-align: top;
+}
+
+.trackTitleDefaultPage
+{
+      font-family: Sans-serif, Verdana, arial;
+      font-size: 1.5em;
+      vertical-align: top;
+      text-decoration: none;
+      letter-spacing:1.4px;
+}
+/* TAB MENU   
+----------------------------------------------------------*/
+
+div.hideSkiplink
+{
+    background-color:#97B251;/*DFF7CC*/
+    width:100%;
+}
+
+div.menu
+{
+    padding: 50px 0px 4px 8px;
+}
+
+.topMenu
+{
+    font-size: 1.1em;
+    display: block;
+    text-align: right;
+    /*padding: 10px;*/
+    color: Blue;
+}
+
+div.menu ul
+{
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+    width: auto;
+}
+
+div.menu ul li a, div.menu ul li a:visited
+{
+    background-color: #17335A;/*465c71*/
+    border: 1px #4e667d solid;
+    color: #dde4ec;
+    display: block;
+    line-height: 1.35em;
+    padding: 4px 20px;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+div.menu ul li a:hover
+{
+    background-color: #bfcbd6;
+    color: #465c71;
+    text-decoration: none;
+}
+
+div.menu ul li a:active
+{
+    background-color: #465c71;
+    color: #cfdbe6;
+    text-decoration: none;
+}
+
+ul.track_stream
+{    
+    padding-left: 0px;
+    list-style-type: none;
+    text-align: left;
+    margin-left: 0px;
+}
+ul.track_stream li
+{    
+    text-align: left;
+    margin-bottom: 0px;
+}
+
+li.track_stream
+{
+    text-align: left;
+    margin-left: 0px;
+    padding-left: 0px
+}
+
+/* FORM ELEMENTS   
+----------------------------------------------------------*/
+
+fieldset
+{
+    margin: 1em 0px;
+    padding: 1em;
+    border: 1px solid #ccc;
+	width: 554px;
+}
+
+fieldset p 
+{
+    margin: 2px 12px 10px 10px;
+}
+
+fieldset.login label, fieldset.register label, fieldset.changePassword label
+{
+    display: block;
+}
+
+fieldset label.inline 
+{
+    display: inline;
+}
+
+legend 
+{
+    font-size: 1.1em;
+    font-weight: 600;
+    padding: 2px 4px 8px 4px;
+}
+
+input.textEntry 
+{
+    width: 320px;
+    border: 1px solid #ccc;
+}
+
+input.passwordEntry 
+{
+    width: 320px;
+    border: 1px solid #ccc;
+}
+
+div.accountInfo
+{
+    width: 42%;
+}
+
+div.contactInfo
+{
+	width: 57%;
+}
+
+div.greenBack
+{
+   /*background-color:#F1F7F0;  */
+   padding: 5px 12px;
+   /*margin: 12px 8px 8px 8px;*/
+   min-height: 420px;
+}
+
+div.myPadding {
+    padding: 5px 12px;
+}
+/* MISC  
+----------------------------------------------------------*/
+
+.clear
+{
+    clear: both;
+}
+
+.title
+{
+    display: block;
+    float: left;
+    text-align: left;   
+    width: 319px;
+    margin-top: -10px;/*aggiunto*/
+}
+
+.loginDisplay
+{
+    font-size: 1.1em;
+    display: block;
+    text-align: right;
+    padding: 10px;
+    color: Blue;
+}
+
+.masterMenu
+{
+    font-size: 1.1em;
+    display: block;
+    text-align: right;
+    padding: 10px;
+    color: Blue;
+    margin-top: -65px;
+    margin-left: 300px;
+}
+
+.loginDisplay a:link
+{
+    color: Gray;
+}
+
+.loginDisplay a:visited
+{
+    color: Gray;
+}
+
+.loginDisplay a:hover
+{
+    color:Green;
+}
+
+.failureNotification
+{
+    font-size: 1.2em;
+    color: Red;
+}
+
+.bold
+{
+    font-weight: bold;
+}
+
+.submitButton
+{
+    text-align: right;
+    padding-right: 10px;
+}
+
+.customPlayImage
+{
+    position:absolute;
+    z-index:999;
+    margin-top:-110px; /*margine dall'alto */
+    margin-left:7px; /*margine da sinistra */
+}
+
+.cropBikeMap{
+    float:left;
+    margin:.5em 10px .5em 0;
+    overflow:hidden; /* this is important */
+    position:relative; /* this is important too */
+    border:1px solid #ccc;
+    width:400px;
+    height:212px;
+    /*width="600" height="515" border="0" frameborder="0" marginheight="0" marginwidth="0"  scrolling="no"*/
+}
+
+.cropBikeMap iFrame{
+    position:absolute;
+    top:-200px;
+    left:-112px;
+    }
+
+
+
+
+/*added*/
+#notify-container span.notify-close {
+    background-color: #FAD163;
+    border: 2px solid #735005;
+    cursor: pointer;
+    display: block;
+    float: right;
+    margin-right: 20px;
+    padding-left: 4px;
+    padding-right: 4px;
+    text-decoration: none;
+	width: 268px;
+}
+
+#navcontainer ul
+{
+margin: 0;
+padding: 0;
+list-style-type: none;
+text-align: center;
+}
+
+#navcontainer ul li { display: inline; }
+
+#navcontainer ul li a
+{
+    text-decoration: none;
+    padding: .1em 1em;
+    padding-left: 27px;
+    color: #17335A;
+    font-size: large;
+    /*background-color: #036;*/
+}
+
+#navcontainer ul li a:hover
+{
+    color: #465c71;/*fff*/
+    background-color: #BFCBD6;/*396*/
+    border-style: solid;
+    border-color: #17335A;
+    border-width: 1px;
+}
+
+#slideshow {
+	/*border: 1px solid #000;*/
+	overflow: hidden;
+	margin: 50px auto 10px;
+	position: relative;
+	width: 750;
+	height: 25px;
+}
+
+#slideshow label {
+	width: 750px;
+	height: 25px;
+}
+
+/* ESTRA CONTAINERS (FROM WEB SERVICES)
+----------------------------------------------------------*/
+
+#FlagContainer  
+{
+    margin: 0 auto;
+    /*margin-right: 10px;
+    margin-left: 10px;    */
+
+}
+
+#FlagContainer p {
+    font-family: Verdana;
+    font-variant: normal;
+    line-height: 1.6em;
+    font-size: 1.0em;
+}
+
+#FlagBlock
+{
+    display: block;
+    float: right;
+    /*border: 1px solid grey;*/
+    width: 129px;
+    height: 175px;
+    margin: 0 0 10px 8px;
+    overflow-y: auto;
+    overflow-x: hidden;
+  
+}  
+
+#FlagContent { width: 100%; }
+
+.loading { background: url('~/Images for html/TrackPage/progress-indicator.gif') no-repeat center; }
+
+/* SUBSCRIPTION PAGE
+----------------------------------------------------------*/
+.paragrSubscriptionPage
+{
+    margin-bottom: 10px;
+    margin-top: 10px;
+    line-height: 1.6em;
+    font-size: 1.0em;
+    font-family: Verdana;    
+    text-align: center;
+}

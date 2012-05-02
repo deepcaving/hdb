@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="deepcavi_hdb1-Web.config Connection String" description="deepcavi_hdb1 Connection String used in web.config by the application to access the database." defaultvalue="Data Source=ReleaseSQLServer;Initial Catalog=MyReleaseDB;Integrated Security=True" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='deepcavi_hdb1']/@connectionString" />
+  </parameter>
+</parameters>

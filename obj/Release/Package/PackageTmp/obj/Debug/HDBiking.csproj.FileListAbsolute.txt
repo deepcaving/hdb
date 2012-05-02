@@ -1,0 +1,5 @@
+D:\Visual Studio 2010 Professional\Projects\HDBiking\HDBiking\bin\HDBiking.dll
+D:\Visual Studio 2010 Professional\Projects\HDBiking\HDBiking\bin\HDBiking.pdb
+D:\Visual Studio 2010 Professional\Projects\HDBiking\HDBiking\obj\Debug\ResolveAssemblyReference.cache
+D:\Visual Studio 2010 Professional\Projects\HDBiking\HDBiking\obj\Debug\HDBiking.dll
+D:\Visual Studio 2010 Professional\Projects\HDBiking\HDBiking\obj\Debug\HDBiking.pdb

@@ -1,0 +1,1507 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{CD01D53E-B19D-4812-91F5-F609801B88A3}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>HDBiking</RootNamespace>
+    <AssemblyName>HDBiking</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <FilesToIncludeForPublish>OnlyFilesToRunTheApp</FilesToIncludeForPublish>
+    <ExcludeGeneratedDebugSymbol>true</ExcludeGeneratedDebugSymbol>
+    <ExcludeApp_Data>true</ExcludeApp_Data>
+    <PublishDatabases>false</PublishDatabases>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ExcludeGeneratedDebugSymbol>true</ExcludeGeneratedDebugSymbol>
+    <ExcludeApp_Data>true</ExcludeApp_Data>
+    <PublishDatabaseSettings>
+      <Objects>
+      </Objects>
+    </PublishDatabaseSettings>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AjaxControlToolkit, Version=4.1.51116.0, Culture=neutral, PublicKeyToken=28f01b0e84b6d53e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\AjaxControlToolkit.4.1.51116\lib\40\AjaxControlToolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="AntiXSSLibrary, Version=4.0.0.0, Culture=neutral, PublicKeyToken=d127efab8a9c114f, processorArchitecture=MSIL">
+      <HintPath>..\packages\AjaxControlToolkit.4.1.51116\lib\40\SanitizerProviders\AntiXSSLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="HtmlSanitizationLibrary, Version=4.0.0.0, Culture=neutral, PublicKeyToken=d127efab8a9c114f, processorArchitecture=MSIL">
+      <HintPath>..\packages\AjaxControlToolkit.4.1.51116\lib\40\SanitizerProviders\HtmlSanitizationLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="SanitizerProviders, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\AjaxControlToolkit.4.1.51116\lib\40\SanitizerProviders\SanitizerProviders.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="About.aspx" />
+    <Content Include="Account\ChangePassword.aspx" />
+    <Content Include="Account\ChangePasswordSuccess.aspx" />
+    <Content Include="Account\Login.aspx" />
+    <Content Include="Account\MyAccount.aspx" />
+    <Content Include="Account\MyTracks.aspx" />
+    <Content Include="Account\NewPageTemplate.aspx" />
+    <Content Include="Account\PublicProfilePage.aspx" />
+    <Content Include="Account\PublicProfilePageGenerator.aspx" />
+    <Content Include="Account\PublicProfilePageTemp.aspx" />
+    <Content Include="Account\Register.aspx" />
+    <Content Include="Admin\ImgUpload.aspx" />
+    <Content Include="Admin\VideoInfo.aspx" />
+    <Content Include="Admin\VideoUpload.aspx" />
+    <Content Include="Audio Player\config_maxi.xml" />
+    <Content Include="bin\AjaxControlToolkit.dll" />
+    <Content Include="bin\AntiXSSLibrary.dll" />
+    <Content Include="bin\HtmlSanitizationLibrary.dll" />
+    <Content Include="bin\SanitizerProviders.dll" />
+    <Content Include="bin_old\AjaxControlToolkit.dll" />
+    <Content Include="bin_old\AjaxControlToolkitSampleSite.zip" />
+    <Content Include="bin_old\AntiXSSLibrary.dll" />
+    <Content Include="bin_old\HtmlSanitizationLibrary.dll" />
+    <Content Include="bin_old\LICENSE.txt" />
+    <Content Include="bin_old\ReadMe.html" />
+    <Content Include="bin_old\SanitizerProviders.dll" />
+    <Content Include="bin_old\SanitizerProviders\AntiXSSLibrary.dll" />
+    <Content Include="bin_old\SanitizerProviders\HtmlSanitizationLibrary.dll" />
+    <Content Include="bin_old\SanitizerProviders\SanitizerProviders.dll" />
+    <Content Include="ContactForm\ContactFormLI.aspx" />
+    <Content Include="ContactForm\ContactFormLO.ascx" />
+    <Content Include="ContactForm\ContactFormLO.aspx" />
+    <Content Include="ContactForm\ContactFormSuccess.aspx" />
+    <Content Include="CountryFlagReader.asmx" />
+    <Content Include="Default.aspx" />
+    <Content Include="Error.aspx" />
+    <Content Include="errors.aspx" />
+    <Content Include="ExtraContent1.ascx" />
+    <Content Include="Faq.aspx" />
+    <Content Include="FlagDiv.aspx" />
+    <Content Include="Images for html\About\CrossTheSky con hdbiking copyright 2.jpg" />
+    <Content Include="Images for html\About\CrossTheSky con hdbiking copyright medium.jpg" />
+    <Content Include="Images for html\About\me.jpg" />
+    <Content Include="Images for html\DefaultTransit\TransAlpin Bike.jpg" />
+    <Content Include="Images for html\DefaultTransit\TransAlpina1.jpg" />
+    <Content Include="Images for html\DefaultTransit\TransAlpina2.jpg" />
+    <Content Include="Images for html\DefaultTransit\TransAlpina3.jpg" />
+    <Content Include="Images for html\DefaultTransit\TransAlpinaCyclist - Copy.jpg" />
+    <Content Include="Images for html\DefaultTransit\TransAlpinaCyclist.jpg" />
+    <Content Include="Images for html\Demo pics\0 poplaca.jpg" />
+    <Content Include="Images for html\Demo pics\2.jpg" />
+    <Content Include="Images for html\Demo pics\2000 Jan 01 00h01m43s.jpg" />
+    <Content Include="Images for html\Demo pics\5.jpg" />
+    <Content Include="Images for html\Demo pics\bosco poplaca.jpg" />
+    <Content Include="Images for html\Demo pics\cavallo rasinari.jpg" />
+    <Content Include="Images for html\Demo pics\curmatura.jpg" />
+    <Content Include="Images for html\Demo pics\curmatura1.jpg" />
+    <Content Include="Images for html\Demo pics\curmatura2.jpg" />
+    <Content Include="Images for html\Demo pics\curmatura4.jpg" />
+    <Content Include="Images for html\Demo pics\curmatura5.jpg" />
+    <Content Include="Images for html\Demo pics\curmatura7.jpg" />
+    <Content Include="Images for html\Demo pics\prejba1.jpg" />
+    <Content Include="Images for html\Demo pics\prejba2.jpg" />
+    <Content Include="Images for html\Demo pics\prejba3.jpg" />
+    <Content Include="Images for html\Demo pics\prejba4.jpg" />
+    <Content Include="Images for html\Demo pics\prejba5.jpg" />
+    <Content Include="Images for html\Demo pics\prejba6.jpg" />
+    <Content Include="Images for html\Demo pics\prejba7.jpg" />
+    <Content Include="Images for html\Demo pics\santa1.jpg" />
+    <Content Include="Images for html\Demo pics\subArini1.jpg" />
+    <Content Include="Images for html\Demo pics\subArini2.jpg" />
+    <Content Include="Images for html\Demo pics\subArini3.jpg" />
+    <Content Include="Images for html\Demo pics\subArini4.jpg" />
+    <Content Include="Images for html\Demo pics\subArini5.jpg" />
+    <Content Include="Images for html\Demo pics\trees1.jpg" />
+    <Content Include="Images for html\Flags\Italy.png" />
+    <Content Include="Images for html\Flags\Romania.png" />
+    <Content Include="Images for html\Flags\United_Kingdom.png" />
+    <Content Include="Images for html\horizontal rule default.png" />
+    <Content Include="Images for html\Icons\Asphalt - Copy.png" />
+    <Content Include="Images for html\Icons\Asphalt.png" />
+    <Content Include="Images for html\Icons\collapse original.jpg" />
+    <Content Include="Images for html\Icons\collapse.jpg" />
+    <Content Include="Images for html\Icons\Comments\comments_newmsg.gif" />
+    <Content Include="Images for html\Icons\delete.png" />
+    <Content Include="Images for html\Icons\Edit.jpg" />
+    <Content Include="Images for html\Icons\Edit.png" />
+    <Content Include="Images for html\Icons\edit_doc.gif" />
+    <Content Include="Images for html\Icons\edit_doc.png" />
+    <Content Include="Images for html\Icons\emptyAvatarBig.jpg" />
+    <Content Include="Images for html\Icons\emptyAvatarMedium.jpg" />
+    <Content Include="Images for html\Icons\emptyAvatarSmall.jpg" />
+    <Content Include="Images for html\Icons\expand original.jpg" />
+    <Content Include="Images for html\Icons\expand.jpg" />
+    <Content Include="Images for html\Icons\greenOk - Copy.jpg" />
+    <Content Include="Images for html\Icons\greenOk.bmp" />
+    <Content Include="Images for html\Icons\greenOk.jpg" />
+    <Content Include="Images for html\Icons\greenOk.png" />
+    <Content Include="Images for html\Icons\greenOkIcon.png" />
+    <Content Include="Images for html\Icons\icons.gif" />
+    <Content Include="Images for html\Icons\iconsWhiteBg.gif" />
+    <Content Include="Images for html\Icons\musicIcon - Copy.bmp" />
+    <Content Include="Images for html\Icons\musicIcon-blue - Copy.bmp" />
+    <Content Include="Images for html\Icons\musicIcon-blue.bmp" />
+    <Content Include="Images for html\Icons\musicIcon.bmp" />
+    <Content Include="Images for html\Icons\plsLogInToPostComment.bmp" />
+    <Content Include="Images for html\Icons\reupload.png" />
+    <Content Include="Images for html\Icons\Trail - Copy.png" />
+    <Content Include="Images for html\Icons\Trail.png" />
+    <Content Include="Images for html\Icons\zoom.jpg" />
+    <Content Include="Images for html\MasterPage\biker on transalpina.jpg" />
+    <Content Include="Images for html\NewPageTemplate\anyImageIcon.png" />
+    <Content Include="Images for html\NewPageTemplate\anyImageIconGray.png" />
+    <Content Include="Images for html\NewPageTemplate\anyImageIconOriginal.png" />
+    <Content Include="Images for html\NewPageTemplate\demoPicForEmptyContent.bmp" />
+    <Content Include="Images for html\NewPageTemplate\go to videos - NewPageTemplate Gray.png" />
+    <Content Include="Images for html\NewPageTemplate\go to videos - NewPageTemplate.png" />
+    <Content Include="Images for html\NewPageTemplate\map.jpg" />
+    <Content Include="Images for html\NewPageTemplate\mapGray Large.jpg" />
+    <Content Include="Images for html\NewPageTemplate\mapGray.jpg" />
+    <Content Include="Images for html\NewPageTemplate\NewPageTemplate.jpg" />
+    <Content Include="Images for html\NewPageTemplate\radio player Large.jpg" />
+    <Content Include="Images for html\NewPageTemplate\radio player.jpg" />
+    <Content Include="Images for html\Temp Images\go to video - Copy.png" />
+    <Content Include="Images for html\Temp Images\go to video.png" />
+    <Content Include="Images for html\Temp Images\go to videos.png" />
+    <Content Include="Images for html\Temp Images\video coming soon - Copy.png" />
+    <Content Include="Images for html\Temp Images\video coming soon.png" />
+    <Content Include="Images for html\TrackPage\progress-indicator.gif" />
+    <Content Include="Images\2439DBE2-F661-438F-88D5-BA8A00959494\ExtraPictures\DSC_0359.JPG" />
+    <Content Include="Images\2439DBE2-F661-438F-88D5-BA8A00959494\ExtraPictures\DSC_0370.JPG" />
+    <Content Include="Images\2439DBE2-F661-438F-88D5-BA8A00959494\ExtraPictures\DSC_0438.JPG" />
+    <Content Include="Images\2439DBE2-F661-438F-88D5-BA8A00959494\ExtraPictures\DSC_0451.JPG" />
+    <Content Include="Images\2439DBE2-F661-438F-88D5-BA8A00959494\ExtraPictures\DSC_0516.JPG" />
+    <Content Include="Images\2439DBE2-F661-438F-88D5-BA8A00959494\ExtraPictures\DSC_0569.JPG" />
+    <Content Include="Images\2439DBE2-F661-438F-88D5-BA8A00959494\ExtraPictures\DSC_0578.JPG" />
+    <Content Include="Images\2439DBE2-F661-438F-88D5-BA8A00959494\ExtraPictures\DSC_0602.JPG" />
+    <Content Include="Images\2439DBE2-F661-438F-88D5-BA8A00959494\ExtraPictures\small\DSC_0359.jpg" />
+    <Content Include="Images\2439DBE2-F661-438F-88D5-BA8A00959494\ExtraPictures\small\DSC_0370.jpg" />
+    <Content Include="Images\2439DBE2-F661-438F-88D5-BA8A00959494\ExtraPictures\small\DSC_0438.jpg" />
+    <Content Include="Images\2439DBE2-F661-438F-88D5-BA8A00959494\ExtraPictures\small\DSC_0451.jpg" />
+    <Content Include="Images\2439DBE2-F661-438F-88D5-BA8A00959494\ExtraPictures\small\DSC_0516.jpg" />
+    <Content Include="Images\2439DBE2-F661-438F-88D5-BA8A00959494\ExtraPictures\small\DSC_0569.jpg" />
+    <Content Include="Images\2439DBE2-F661-438F-88D5-BA8A00959494\ExtraPictures\small\DSC_0578.jpg" />
+    <Content Include="Images\2439DBE2-F661-438F-88D5-BA8A00959494\ExtraPictures\small\DSC_0602.jpg" />
+    <Content Include="Images\2439DBE2-F661-438F-88D5-BA8A00959494\Large\1.jpg" />
+    <Content Include="Images\2439DBE2-F661-438F-88D5-BA8A00959494\Large\2.jpg" />
+    <Content Include="Images\2439DBE2-F661-438F-88D5-BA8A00959494\Large\3.jpg" />
+    <Content Include="Images\2439DBE2-F661-438F-88D5-BA8A00959494\Large\4.jpg" />
+    <Content Include="Images\2439DBE2-F661-438F-88D5-BA8A00959494\Large\5.jpg" />
+    <Content Include="Images\2439DBE2-F661-438F-88D5-BA8A00959494\Large\6.jpg" />
+    <Content Include="Images\2439DBE2-F661-438F-88D5-BA8A00959494\Large\7.jpg" />
+    <Content Include="Images\2439DBE2-F661-438F-88D5-BA8A00959494\Large\8.jpg" />
+    <Content Include="Images\2439DBE2-F661-438F-88D5-BA8A00959494\Medium\1.jpg" />
+    <Content Include="Images\2439DBE2-F661-438F-88D5-BA8A00959494\Medium\2.jpg" />
+    <Content Include="Images\2439DBE2-F661-438F-88D5-BA8A00959494\Medium\3.jpg" />
+    <Content Include="Images\2439DBE2-F661-438F-88D5-BA8A00959494\Medium\4.jpg" />
+    <Content Include="Images\2439DBE2-F661-438F-88D5-BA8A00959494\Medium\5.jpg" />
+    <Content Include="Images\2439DBE2-F661-438F-88D5-BA8A00959494\Medium\6.jpg" />
+    <Content Include="Images\2439DBE2-F661-438F-88D5-BA8A00959494\Medium\7.jpg" />
+    <Content Include="Images\2439DBE2-F661-438F-88D5-BA8A00959494\Medium\8.jpg" />
+    <Content Include="Images\2439DBE2-F661-438F-88D5-BA8A00959494\Thumb\1.bmp" />
+    <Content Include="Images\2439DBE2-F661-438F-88D5-BA8A00959494\Thumb\2.bmp" />
+    <Content Include="Images\2439DBE2-F661-438F-88D5-BA8A00959494\Thumb\3.bmp" />
+    <Content Include="Images\2439DBE2-F661-438F-88D5-BA8A00959494\Thumb\4.bmp" />
+    <Content Include="Images\2439DBE2-F661-438F-88D5-BA8A00959494\Thumb\5.bmp" />
+    <Content Include="Images\2439DBE2-F661-438F-88D5-BA8A00959494\Thumb\6.bmp" />
+    <Content Include="Images\2439DBE2-F661-438F-88D5-BA8A00959494\Thumb\7.bmp" />
+    <Content Include="Images\2439DBE2-F661-438F-88D5-BA8A00959494\Thumb\8.bmp" />
+    <Content Include="Images\2FABB6A4-185F-4D64-BDEA-842F816AD497\Large\1.jpg" />
+    <Content Include="Images\2FABB6A4-185F-4D64-BDEA-842F816AD497\Large\2.jpg" />
+    <Content Include="Images\2FABB6A4-185F-4D64-BDEA-842F816AD497\Large\3.jpg" />
+    <Content Include="Images\2FABB6A4-185F-4D64-BDEA-842F816AD497\Large\4.jpg" />
+    <Content Include="Images\2FABB6A4-185F-4D64-BDEA-842F816AD497\Large\5.jpg" />
+    <Content Include="Images\2FABB6A4-185F-4D64-BDEA-842F816AD497\Large\6.jpg" />
+    <Content Include="Images\2FABB6A4-185F-4D64-BDEA-842F816AD497\Large\7.jpg" />
+    <Content Include="Images\2FABB6A4-185F-4D64-BDEA-842F816AD497\Large\8.jpg" />
+    <Content Include="Images\2FABB6A4-185F-4D64-BDEA-842F816AD497\Medium\1.jpg" />
+    <Content Include="Images\2FABB6A4-185F-4D64-BDEA-842F816AD497\Medium\2.jpg" />
+    <Content Include="Images\2FABB6A4-185F-4D64-BDEA-842F816AD497\Medium\3.jpg" />
+    <Content Include="Images\2FABB6A4-185F-4D64-BDEA-842F816AD497\Medium\4.jpg" />
+    <Content Include="Images\2FABB6A4-185F-4D64-BDEA-842F816AD497\Medium\5.jpg" />
+    <Content Include="Images\2FABB6A4-185F-4D64-BDEA-842F816AD497\Medium\6.jpg" />
+    <Content Include="Images\2FABB6A4-185F-4D64-BDEA-842F816AD497\Medium\7.jpg" />
+    <Content Include="Images\2FABB6A4-185F-4D64-BDEA-842F816AD497\Medium\8.jpg" />
+    <Content Include="Images\2FABB6A4-185F-4D64-BDEA-842F816AD497\Thumb\1.bmp" />
+    <Content Include="Images\2FABB6A4-185F-4D64-BDEA-842F816AD497\Thumb\2.bmp" />
+    <Content Include="Images\2FABB6A4-185F-4D64-BDEA-842F816AD497\Thumb\3.bmp" />
+    <Content Include="Images\2FABB6A4-185F-4D64-BDEA-842F816AD497\Thumb\4.bmp" />
+    <Content Include="Images\2FABB6A4-185F-4D64-BDEA-842F816AD497\Thumb\5.bmp" />
+    <Content Include="Images\2FABB6A4-185F-4D64-BDEA-842F816AD497\Thumb\6.bmp" />
+    <Content Include="Images\2FABB6A4-185F-4D64-BDEA-842F816AD497\Thumb\7.bmp" />
+    <Content Include="Images\2FABB6A4-185F-4D64-BDEA-842F816AD497\Thumb\8.bmp" />
+    <Content Include="Images\4EDAD9B3-ADE3-4A69-8AE6-69862BB5D0EA\Large\1.jpg" />
+    <Content Include="Images\4EDAD9B3-ADE3-4A69-8AE6-69862BB5D0EA\Large\2.jpg" />
+    <Content Include="Images\4EDAD9B3-ADE3-4A69-8AE6-69862BB5D0EA\Large\3.jpg" />
+    <Content Include="Images\4EDAD9B3-ADE3-4A69-8AE6-69862BB5D0EA\Large\4.jpg" />
+    <Content Include="Images\4EDAD9B3-ADE3-4A69-8AE6-69862BB5D0EA\Medium\1.jpg" />
+    <Content Include="Images\4EDAD9B3-ADE3-4A69-8AE6-69862BB5D0EA\Medium\2.jpg" />
+    <Content Include="Images\4EDAD9B3-ADE3-4A69-8AE6-69862BB5D0EA\Medium\3.jpg" />
+    <Content Include="Images\4EDAD9B3-ADE3-4A69-8AE6-69862BB5D0EA\Medium\4.jpg" />
+    <Content Include="Images\4EDAD9B3-ADE3-4A69-8AE6-69862BB5D0EA\Thumb\1.bmp" />
+    <Content Include="Images\4EDAD9B3-ADE3-4A69-8AE6-69862BB5D0EA\Thumb\2.bmp" />
+    <Content Include="Images\4EDAD9B3-ADE3-4A69-8AE6-69862BB5D0EA\Thumb\3.bmp" />
+    <Content Include="Images\4EDAD9B3-ADE3-4A69-8AE6-69862BB5D0EA\Thumb\4.bmp" />
+    <Content Include="Images\5848AD25-2664-465D-A658-081D262FE99A\Large\1.jpg" />
+    <Content Include="Images\5848AD25-2664-465D-A658-081D262FE99A\Large\2.jpg" />
+    <Content Include="Images\5848AD25-2664-465D-A658-081D262FE99A\Large\3.jpg" />
+    <Content Include="Images\5848AD25-2664-465D-A658-081D262FE99A\Large\4.jpg" />
+    <Content Include="Images\5848AD25-2664-465D-A658-081D262FE99A\Large\5.jpg" />
+    <Content Include="Images\5848AD25-2664-465D-A658-081D262FE99A\Large\6.jpg" />
+    <Content Include="Images\5848AD25-2664-465D-A658-081D262FE99A\Large\7.jpg" />
+    <Content Include="Images\5848AD25-2664-465D-A658-081D262FE99A\Large\8.jpg" />
+    <Content Include="Images\5848AD25-2664-465D-A658-081D262FE99A\Medium\1.jpg" />
+    <Content Include="Images\5848AD25-2664-465D-A658-081D262FE99A\Medium\2.jpg" />
+    <Content Include="Images\5848AD25-2664-465D-A658-081D262FE99A\Medium\3.jpg" />
+    <Content Include="Images\5848AD25-2664-465D-A658-081D262FE99A\Medium\4.jpg" />
+    <Content Include="Images\5848AD25-2664-465D-A658-081D262FE99A\Medium\5.jpg" />
+    <Content Include="Images\5848AD25-2664-465D-A658-081D262FE99A\Medium\6.jpg" />
+    <Content Include="Images\5848AD25-2664-465D-A658-081D262FE99A\Medium\7.jpg" />
+    <Content Include="Images\5848AD25-2664-465D-A658-081D262FE99A\Medium\8.jpg" />
+    <Content Include="Images\5848AD25-2664-465D-A658-081D262FE99A\Thumb\1.bmp" />
+    <Content Include="Images\5848AD25-2664-465D-A658-081D262FE99A\Thumb\2.bmp" />
+    <Content Include="Images\5848AD25-2664-465D-A658-081D262FE99A\Thumb\3.bmp" />
+    <Content Include="Images\5848AD25-2664-465D-A658-081D262FE99A\Thumb\4.bmp" />
+    <Content Include="Images\5848AD25-2664-465D-A658-081D262FE99A\Thumb\5.bmp" />
+    <Content Include="Images\5848AD25-2664-465D-A658-081D262FE99A\Thumb\6.bmp" />
+    <Content Include="Images\5848AD25-2664-465D-A658-081D262FE99A\Thumb\7.bmp" />
+    <Content Include="Images\5848AD25-2664-465D-A658-081D262FE99A\Thumb\8.bmp" />
+    <Content Include="Images\84D35CF4-C9E9-499E-BD6E-287B3EBCBC75\Large\1.jpg" />
+    <Content Include="Images\84D35CF4-C9E9-499E-BD6E-287B3EBCBC75\Large\2.jpg" />
+    <Content Include="Images\84D35CF4-C9E9-499E-BD6E-287B3EBCBC75\Large\3.jpg" />
+    <Content Include="Images\84D35CF4-C9E9-499E-BD6E-287B3EBCBC75\Large\4.jpg" />
+    <Content Include="Images\84D35CF4-C9E9-499E-BD6E-287B3EBCBC75\Medium\1.jpg" />
+    <Content Include="Images\84D35CF4-C9E9-499E-BD6E-287B3EBCBC75\Medium\2.jpg" />
+    <Content Include="Images\84D35CF4-C9E9-499E-BD6E-287B3EBCBC75\Medium\3.jpg" />
+    <Content Include="Images\84D35CF4-C9E9-499E-BD6E-287B3EBCBC75\Medium\4.jpg" />
+    <Content Include="Images\84D35CF4-C9E9-499E-BD6E-287B3EBCBC75\Thumb\1.bmp" />
+    <Content Include="Images\84D35CF4-C9E9-499E-BD6E-287B3EBCBC75\Thumb\2.bmp" />
+    <Content Include="Images\84D35CF4-C9E9-499E-BD6E-287B3EBCBC75\Thumb\3.bmp" />
+    <Content Include="Images\84D35CF4-C9E9-499E-BD6E-287B3EBCBC75\Thumb\4.bmp" />
+    <Content Include="Images\8C564D72-C8B6-4217-BA4F-C2C7E2C17AC5\Large\1.jpg" />
+    <Content Include="Images\8C564D72-C8B6-4217-BA4F-C2C7E2C17AC5\Large\2.jpg" />
+    <Content Include="Images\8C564D72-C8B6-4217-BA4F-C2C7E2C17AC5\Large\3.jpg" />
+    <Content Include="Images\8C564D72-C8B6-4217-BA4F-C2C7E2C17AC5\Large\4.jpg" />
+    <Content Include="Images\8C564D72-C8B6-4217-BA4F-C2C7E2C17AC5\Large\5.jpg" />
+    <Content Include="Images\8C564D72-C8B6-4217-BA4F-C2C7E2C17AC5\Large\6.jpg" />
+    <Content Include="Images\8C564D72-C8B6-4217-BA4F-C2C7E2C17AC5\Medium\1.jpg" />
+    <Content Include="Images\8C564D72-C8B6-4217-BA4F-C2C7E2C17AC5\Medium\2.jpg" />
+    <Content Include="Images\8C564D72-C8B6-4217-BA4F-C2C7E2C17AC5\Medium\3.jpg" />
+    <Content Include="Images\8C564D72-C8B6-4217-BA4F-C2C7E2C17AC5\Medium\4.jpg" />
+    <Content Include="Images\8C564D72-C8B6-4217-BA4F-C2C7E2C17AC5\Medium\5.jpg" />
+    <Content Include="Images\8C564D72-C8B6-4217-BA4F-C2C7E2C17AC5\Medium\6.jpg" />
+    <Content Include="Images\8C564D72-C8B6-4217-BA4F-C2C7E2C17AC5\Thumb\1.bmp" />
+    <Content Include="Images\8C564D72-C8B6-4217-BA4F-C2C7E2C17AC5\Thumb\2.bmp" />
+    <Content Include="Images\8C564D72-C8B6-4217-BA4F-C2C7E2C17AC5\Thumb\3.bmp" />
+    <Content Include="Images\8C564D72-C8B6-4217-BA4F-C2C7E2C17AC5\Thumb\4.bmp" />
+    <Content Include="Images\8C564D72-C8B6-4217-BA4F-C2C7E2C17AC5\Thumb\5.bmp" />
+    <Content Include="Images\8C564D72-C8B6-4217-BA4F-C2C7E2C17AC5\Thumb\6.bmp" />
+    <Content Include="Images\94FB8A70-BDB4-487A-BFF8-152FFC640D19\Large\1.jpg" />
+    <Content Include="Images\94FB8A70-BDB4-487A-BFF8-152FFC640D19\Large\2.jpg" />
+    <Content Include="Images\94FB8A70-BDB4-487A-BFF8-152FFC640D19\Large\3.jpg" />
+    <Content Include="Images\94FB8A70-BDB4-487A-BFF8-152FFC640D19\Large\4.jpg" />
+    <Content Include="Images\94FB8A70-BDB4-487A-BFF8-152FFC640D19\Large\5.jpg" />
+    <Content Include="Images\94FB8A70-BDB4-487A-BFF8-152FFC640D19\Large\6.jpg" />
+    <Content Include="Images\94FB8A70-BDB4-487A-BFF8-152FFC640D19\Medium\1.jpg" />
+    <Content Include="Images\94FB8A70-BDB4-487A-BFF8-152FFC640D19\Medium\2.jpg" />
+    <Content Include="Images\94FB8A70-BDB4-487A-BFF8-152FFC640D19\Medium\3.jpg" />
+    <Content Include="Images\94FB8A70-BDB4-487A-BFF8-152FFC640D19\Medium\4.jpg" />
+    <Content Include="Images\94FB8A70-BDB4-487A-BFF8-152FFC640D19\Medium\5.jpg" />
+    <Content Include="Images\94FB8A70-BDB4-487A-BFF8-152FFC640D19\Medium\6.jpg" />
+    <Content Include="Images\94FB8A70-BDB4-487A-BFF8-152FFC640D19\Thumb\1.bmp" />
+    <Content Include="Images\94FB8A70-BDB4-487A-BFF8-152FFC640D19\Thumb\2.bmp" />
+    <Content Include="Images\94FB8A70-BDB4-487A-BFF8-152FFC640D19\Thumb\3.bmp" />
+    <Content Include="Images\94FB8A70-BDB4-487A-BFF8-152FFC640D19\Thumb\4.bmp" />
+    <Content Include="Images\94FB8A70-BDB4-487A-BFF8-152FFC640D19\Thumb\5.bmp" />
+    <Content Include="Images\94FB8A70-BDB4-487A-BFF8-152FFC640D19\Thumb\6.bmp" />
+    <Content Include="Images\A88F25A2-514A-4F45-9A49-E8C8E525CA6F\Large\1.jpg" />
+    <Content Include="Images\A88F25A2-514A-4F45-9A49-E8C8E525CA6F\Large\2.jpg" />
+    <Content Include="Images\A88F25A2-514A-4F45-9A49-E8C8E525CA6F\Large\3.jpg" />
+    <Content Include="Images\A88F25A2-514A-4F45-9A49-E8C8E525CA6F\Large\4.jpg" />
+    <Content Include="Images\A88F25A2-514A-4F45-9A49-E8C8E525CA6F\Large\5.jpg" />
+    <Content Include="Images\A88F25A2-514A-4F45-9A49-E8C8E525CA6F\Large\6.jpg" />
+    <Content Include="Images\A88F25A2-514A-4F45-9A49-E8C8E525CA6F\Large\7.jpg" />
+    <Content Include="Images\A88F25A2-514A-4F45-9A49-E8C8E525CA6F\Large\8.jpg" />
+    <Content Include="Images\A88F25A2-514A-4F45-9A49-E8C8E525CA6F\Medium\1.jpg" />
+    <Content Include="Images\A88F25A2-514A-4F45-9A49-E8C8E525CA6F\Medium\2.jpg" />
+    <Content Include="Images\A88F25A2-514A-4F45-9A49-E8C8E525CA6F\Medium\3.jpg" />
+    <Content Include="Images\A88F25A2-514A-4F45-9A49-E8C8E525CA6F\Medium\4.jpg" />
+    <Content Include="Images\A88F25A2-514A-4F45-9A49-E8C8E525CA6F\Medium\5.jpg" />
+    <Content Include="Images\A88F25A2-514A-4F45-9A49-E8C8E525CA6F\Medium\6.jpg" />
+    <Content Include="Images\A88F25A2-514A-4F45-9A49-E8C8E525CA6F\Medium\7.jpg" />
+    <Content Include="Images\A88F25A2-514A-4F45-9A49-E8C8E525CA6F\Medium\8.jpg" />
+    <Content Include="Images\A88F25A2-514A-4F45-9A49-E8C8E525CA6F\Thumb\1.bmp" />
+    <Content Include="Images\A88F25A2-514A-4F45-9A49-E8C8E525CA6F\Thumb\2.bmp" />
+    <Content Include="Images\A88F25A2-514A-4F45-9A49-E8C8E525CA6F\Thumb\3.bmp" />
+    <Content Include="Images\A88F25A2-514A-4F45-9A49-E8C8E525CA6F\Thumb\4.bmp" />
+    <Content Include="Images\A88F25A2-514A-4F45-9A49-E8C8E525CA6F\Thumb\5.bmp" />
+    <Content Include="Images\A88F25A2-514A-4F45-9A49-E8C8E525CA6F\Thumb\6.bmp" />
+    <Content Include="Images\A88F25A2-514A-4F45-9A49-E8C8E525CA6F\Thumb\7.bmp" />
+    <Content Include="Images\A88F25A2-514A-4F45-9A49-E8C8E525CA6F\Thumb\8.bmp" />
+    <Content Include="Images\a_User_Avatars\51fd3bc0-879f-4bf6-be92-f5199166721e\sAvatar_51fd3bc0-879f-4bf6-be92-f5199166721e.bmp" />
+    <Content Include="Images\a_User_Avatars\71ffa7d1-b0b7-4b15-8376-77d89f658921\lAvatar_71FFA7D1-B0B7-4B15-8376-77D89F658921.jpg" />
+    <Content Include="Images\a_User_Avatars\71ffa7d1-b0b7-4b15-8376-77d89f658921\mAvatar_71FFA7D1-B0B7-4B15-8376-77D89F658921.jpg" />
+    <Content Include="Images\a_User_Avatars\71ffa7d1-b0b7-4b15-8376-77d89f658921\sAvatar_71ffa7d1-b0b7-4b15-8376-77d89f658921.bmp" />
+    <Content Include="Images\a_User_Avatars\7782edf3-b0de-4aa9-87ee-4e882605f750\lAvatar_7782EDF3-B0DE-4AA9-87EE-4E882605F750.jpg" />
+    <Content Include="Images\a_User_Avatars\7782edf3-b0de-4aa9-87ee-4e882605f750\mAvatar_7782EDF3-B0DE-4AA9-87EE-4E882605F750.jpg" />
+    <Content Include="Images\a_User_Avatars\7782edf3-b0de-4aa9-87ee-4e882605f750\sAvatar_7782edf3-b0de-4aa9-87ee-4e882605f750.bmp" />
+    <Content Include="Images\a_User_Avatars\7F51E994-DF52-4E77-826C-5E204554A9D4\sAvatar_7f51e994-df52-4e77-826c-5e204554a9d4.bmp" />
+    <Content Include="Images\a_User_Avatars\854311D3-C839-4D7A-BED3-A70B9F2C36A9\lAvatar_854311d3-c839-4d7a-bed3-a70b9f2c36a9.jpg" />
+    <Content Include="Images\a_User_Avatars\854311D3-C839-4D7A-BED3-A70B9F2C36A9\mAvatar_854311d3-c839-4d7a-bed3-a70b9f2c36a9.jpg" />
+    <Content Include="Images\a_User_Avatars\854311D3-C839-4D7A-BED3-A70B9F2C36A9\sAvatar_854311d3-c839-4d7a-bed3-a70b9f2c36a9.bmp" />
+    <Content Include="Images\a_User_Avatars\RandomImages link source.txt" />
+    <Content Include="Images\a_User_Avatars\RandomImagesJpg\1.jpg" />
+    <Content Include="Images\a_User_Avatars\RandomImagesJpg\10.jpg" />
+    <Content Include="Images\a_User_Avatars\RandomImagesJpg\11.jpg" />
+    <Content Include="Images\a_User_Avatars\RandomImagesJpg\12.jpg" />
+    <Content Include="Images\a_User_Avatars\RandomImagesJpg\13.jpg" />
+    <Content Include="Images\a_User_Avatars\RandomImagesJpg\14.jpg" />
+    <Content Include="Images\a_User_Avatars\RandomImagesJpg\15.jpg" />
+    <Content Include="Images\a_User_Avatars\RandomImagesJpg\16.jpg" />
+    <Content Include="Images\a_User_Avatars\RandomImagesJpg\17.jpg" />
+    <Content Include="Images\a_User_Avatars\RandomImagesJpg\18.jpg" />
+    <Content Include="Images\a_User_Avatars\RandomImagesJpg\19.jpg" />
+    <Content Include="Images\a_User_Avatars\RandomImagesJpg\2.jpg" />
+    <Content Include="Images\a_User_Avatars\RandomImagesJpg\20.jpg" />
+    <Content Include="Images\a_User_Avatars\RandomImagesJpg\21.jpg" />
+    <Content Include="Images\a_User_Avatars\RandomImagesJpg\22.jpg" />
+    <Content Include="Images\a_User_Avatars\RandomImagesJpg\23.jpg" />
+    <Content Include="Images\a_User_Avatars\RandomImagesJpg\24.jpg" />
+    <Content Include="Images\a_User_Avatars\RandomImagesJpg\25.jpg" />
+    <Content Include="Images\a_User_Avatars\RandomImagesJpg\26.jpg" />
+    <Content Include="Images\a_User_Avatars\RandomImagesJpg\27.jpg" />
+    <Content Include="Images\a_User_Avatars\RandomImagesJpg\28.jpg" />
+    <Content Include="Images\a_User_Avatars\RandomImagesJpg\29.jpg" />
+    <Content Include="Images\a_User_Avatars\RandomImagesJpg\3.jpg" />
+    <Content Include="Images\a_User_Avatars\RandomImagesJpg\30.jpg" />
+    <Content Include="Images\a_User_Avatars\RandomImagesJpg\31.jpg" />
+    <Content Include="Images\a_User_Avatars\RandomImagesJpg\32.jpg" />
+    <Content Include="Images\a_User_Avatars\RandomImagesJpg\33.jpg" />
+    <Content Include="Images\a_User_Avatars\RandomImagesJpg\34.jpg" />
+    <Content Include="Images\a_User_Avatars\RandomImagesJpg\35.jpg" />
+    <Content Include="Images\a_User_Avatars\RandomImagesJpg\36.jpg" />
+    <Content Include="Images\a_User_Avatars\RandomImagesJpg\4.jpg" />
+    <Content Include="Images\a_User_Avatars\RandomImagesJpg\5.jpg" />
+    <Content Include="Images\a_User_Avatars\RandomImagesJpg\6.jpg" />
+    <Content Include="Images\a_User_Avatars\RandomImagesJpg\7.jpg" />
+    <Content Include="Images\a_User_Avatars\RandomImagesJpg\8.jpg" />
+    <Content Include="Images\a_User_Avatars\RandomImagesJpg\9.jpg" />
+    <Content Include="Images\a_User_Avatars\RandomImages\1.bmp" />
+    <Content Include="Images\a_User_Avatars\RandomImages\10.bmp" />
+    <Content Include="Images\a_User_Avatars\RandomImages\11.bmp" />
+    <Content Include="Images\a_User_Avatars\RandomImages\12.bmp" />
+    <Content Include="Images\a_User_Avatars\RandomImages\13.bmp" />
+    <Content Include="Images\a_User_Avatars\RandomImages\14.bmp" />
+    <Content Include="Images\a_User_Avatars\RandomImages\15.bmp" />
+    <Content Include="Images\a_User_Avatars\RandomImages\16.bmp" />
+    <Content Include="Images\a_User_Avatars\RandomImages\17.bmp" />
+    <Content Include="Images\a_User_Avatars\RandomImages\18.bmp" />
+    <Content Include="Images\a_User_Avatars\RandomImages\19.bmp" />
+    <Content Include="Images\a_User_Avatars\RandomImages\2.bmp" />
+    <Content Include="Images\a_User_Avatars\RandomImages\20.bmp" />
+    <Content Include="Images\a_User_Avatars\RandomImages\21.bmp" />
+    <Content Include="Images\a_User_Avatars\RandomImages\22.bmp" />
+    <Content Include="Images\a_User_Avatars\RandomImages\23.bmp" />
+    <Content Include="Images\a_User_Avatars\RandomImages\24.bmp" />
+    <Content Include="Images\a_User_Avatars\RandomImages\25.bmp" />
+    <Content Include="Images\a_User_Avatars\RandomImages\26.bmp" />
+    <Content Include="Images\a_User_Avatars\RandomImages\27.bmp" />
+    <Content Include="Images\a_User_Avatars\RandomImages\28.bmp" />
+    <Content Include="Images\a_User_Avatars\RandomImages\29.bmp" />
+    <Content Include="Images\a_User_Avatars\RandomImages\3.bmp" />
+    <Content Include="Images\a_User_Avatars\RandomImages\30.bmp" />
+    <Content Include="Images\a_User_Avatars\RandomImages\31.bmp" />
+    <Content Include="Images\a_User_Avatars\RandomImages\32.bmp" />
+    <Content Include="Images\a_User_Avatars\RandomImages\33.bmp" />
+    <Content Include="Images\a_User_Avatars\RandomImages\34.bmp" />
+    <Content Include="Images\a_User_Avatars\RandomImages\35.bmp" />
+    <Content Include="Images\a_User_Avatars\RandomImages\36.bmp" />
+    <Content Include="Images\a_User_Avatars\RandomImages\4.bmp" />
+    <Content Include="Images\a_User_Avatars\RandomImages\5.bmp" />
+    <Content Include="Images\a_User_Avatars\RandomImages\6.bmp" />
+    <Content Include="Images\a_User_Avatars\RandomImages\7.bmp" />
+    <Content Include="Images\a_User_Avatars\RandomImages\8.bmp" />
+    <Content Include="Images\a_User_Avatars\RandomImages\9.bmp" />
+    <Content Include="Images\B9EBE203-3A55-4F38-A9F8-18165DE733BE\Large\1.jpg" />
+    <Content Include="Images\B9EBE203-3A55-4F38-A9F8-18165DE733BE\Large\2.jpg" />
+    <Content Include="Images\B9EBE203-3A55-4F38-A9F8-18165DE733BE\Large\3.jpg" />
+    <Content Include="Images\B9EBE203-3A55-4F38-A9F8-18165DE733BE\Large\4.jpg" />
+    <Content Include="Images\B9EBE203-3A55-4F38-A9F8-18165DE733BE\Large\5.jpg" />
+    <Content Include="Images\B9EBE203-3A55-4F38-A9F8-18165DE733BE\Medium\1.jpg" />
+    <Content Include="Images\B9EBE203-3A55-4F38-A9F8-18165DE733BE\Medium\2.jpg" />
+    <Content Include="Images\B9EBE203-3A55-4F38-A9F8-18165DE733BE\Medium\3.jpg" />
+    <Content Include="Images\B9EBE203-3A55-4F38-A9F8-18165DE733BE\Medium\4.jpg" />
+    <Content Include="Images\B9EBE203-3A55-4F38-A9F8-18165DE733BE\Medium\5.jpg" />
+    <Content Include="Images\B9EBE203-3A55-4F38-A9F8-18165DE733BE\Thumb\1.bmp" />
+    <Content Include="Images\B9EBE203-3A55-4F38-A9F8-18165DE733BE\Thumb\2.bmp" />
+    <Content Include="Images\B9EBE203-3A55-4F38-A9F8-18165DE733BE\Thumb\3.bmp" />
+    <Content Include="Images\B9EBE203-3A55-4F38-A9F8-18165DE733BE\Thumb\4.bmp" />
+    <Content Include="Images\B9EBE203-3A55-4F38-A9F8-18165DE733BE\Thumb\5.bmp" />
+    <Content Include="Images\background.jpg" />
+    <Content Include="Images\C491CFB0-6A21-42F4-AE41-7A35AF310DD1\Large\1.jpg" />
+    <Content Include="Images\C491CFB0-6A21-42F4-AE41-7A35AF310DD1\Large\2.jpg" />
+    <Content Include="Images\C491CFB0-6A21-42F4-AE41-7A35AF310DD1\Large\3.jpg" />
+    <Content Include="Images\C491CFB0-6A21-42F4-AE41-7A35AF310DD1\Large\4.jpg" />
+    <Content Include="Images\C491CFB0-6A21-42F4-AE41-7A35AF310DD1\Medium\1.jpg" />
+    <Content Include="Images\C491CFB0-6A21-42F4-AE41-7A35AF310DD1\Medium\2.jpg" />
+    <Content Include="Images\C491CFB0-6A21-42F4-AE41-7A35AF310DD1\Medium\3.jpg" />
+    <Content Include="Images\C491CFB0-6A21-42F4-AE41-7A35AF310DD1\Medium\4.jpg" />
+    <Content Include="Images\C491CFB0-6A21-42F4-AE41-7A35AF310DD1\Thumb\1.bmp" />
+    <Content Include="Images\C491CFB0-6A21-42F4-AE41-7A35AF310DD1\Thumb\2.bmp" />
+    <Content Include="Images\C491CFB0-6A21-42F4-AE41-7A35AF310DD1\Thumb\3.bmp" />
+    <Content Include="Images\C491CFB0-6A21-42F4-AE41-7A35AF310DD1\Thumb\4.bmp" />
+    <Content Include="Images\C6C87476-53B5-4092-9E5A-0B71ECBC0FEF\Large\1.jpg" />
+    <Content Include="Images\C6C87476-53B5-4092-9E5A-0B71ECBC0FEF\Large\2.jpg" />
+    <Content Include="Images\C6C87476-53B5-4092-9E5A-0B71ECBC0FEF\Large\3.jpg" />
+    <Content Include="Images\C6C87476-53B5-4092-9E5A-0B71ECBC0FEF\Large\4.jpg" />
+    <Content Include="Images\C6C87476-53B5-4092-9E5A-0B71ECBC0FEF\Large\5.jpg" />
+    <Content Include="Images\C6C87476-53B5-4092-9E5A-0B71ECBC0FEF\Large\6.jpg" />
+    <Content Include="Images\C6C87476-53B5-4092-9E5A-0B71ECBC0FEF\Medium\1.jpg" />
+    <Content Include="Images\C6C87476-53B5-4092-9E5A-0B71ECBC0FEF\Medium\2.jpg" />
+    <Content Include="Images\C6C87476-53B5-4092-9E5A-0B71ECBC0FEF\Medium\3.jpg" />
+    <Content Include="Images\C6C87476-53B5-4092-9E5A-0B71ECBC0FEF\Medium\4.jpg" />
+    <Content Include="Images\C6C87476-53B5-4092-9E5A-0B71ECBC0FEF\Medium\5.jpg" />
+    <Content Include="Images\C6C87476-53B5-4092-9E5A-0B71ECBC0FEF\Medium\6.jpg" />
+    <Content Include="Images\C6C87476-53B5-4092-9E5A-0B71ECBC0FEF\Thumb\1.bmp" />
+    <Content Include="Images\C6C87476-53B5-4092-9E5A-0B71ECBC0FEF\Thumb\2.bmp" />
+    <Content Include="Images\C6C87476-53B5-4092-9E5A-0B71ECBC0FEF\Thumb\3.bmp" />
+    <Content Include="Images\C6C87476-53B5-4092-9E5A-0B71ECBC0FEF\Thumb\4.bmp" />
+    <Content Include="Images\C6C87476-53B5-4092-9E5A-0B71ECBC0FEF\Thumb\5.bmp" />
+    <Content Include="Images\C6C87476-53B5-4092-9E5A-0B71ECBC0FEF\Thumb\6.bmp" />
+    <Content Include="Images\D565C143-2CB9-41B1-8522-AEEE0D5AD704\Large\1.jpg" />
+    <Content Include="Images\D565C143-2CB9-41B1-8522-AEEE0D5AD704\Large\2.jpg" />
+    <Content Include="Images\D565C143-2CB9-41B1-8522-AEEE0D5AD704\Large\3.jpg" />
+    <Content Include="Images\D565C143-2CB9-41B1-8522-AEEE0D5AD704\Large\4.jpg" />
+    <Content Include="Images\D565C143-2CB9-41B1-8522-AEEE0D5AD704\Large\5.jpg" />
+    <Content Include="Images\D565C143-2CB9-41B1-8522-AEEE0D5AD704\Large\6.jpg" />
+    <Content Include="Images\D565C143-2CB9-41B1-8522-AEEE0D5AD704\Large\7.jpg" />
+    <Content Include="Images\D565C143-2CB9-41B1-8522-AEEE0D5AD704\Medium\1.jpg" />
+    <Content Include="Images\D565C143-2CB9-41B1-8522-AEEE0D5AD704\Medium\2.jpg" />
+    <Content Include="Images\D565C143-2CB9-41B1-8522-AEEE0D5AD704\Medium\3.jpg" />
+    <Content Include="Images\D565C143-2CB9-41B1-8522-AEEE0D5AD704\Medium\4.jpg" />
+    <Content Include="Images\D565C143-2CB9-41B1-8522-AEEE0D5AD704\Medium\5.jpg" />
+    <Content Include="Images\D565C143-2CB9-41B1-8522-AEEE0D5AD704\Medium\6.jpg" />
+    <Content Include="Images\D565C143-2CB9-41B1-8522-AEEE0D5AD704\Medium\7.jpg" />
+    <Content Include="Images\D565C143-2CB9-41B1-8522-AEEE0D5AD704\Thumb\1.bmp" />
+    <Content Include="Images\D565C143-2CB9-41B1-8522-AEEE0D5AD704\Thumb\2.bmp" />
+    <Content Include="Images\D565C143-2CB9-41B1-8522-AEEE0D5AD704\Thumb\3.bmp" />
+    <Content Include="Images\D565C143-2CB9-41B1-8522-AEEE0D5AD704\Thumb\4.bmp" />
+    <Content Include="Images\D565C143-2CB9-41B1-8522-AEEE0D5AD704\Thumb\5.bmp" />
+    <Content Include="Images\D565C143-2CB9-41B1-8522-AEEE0D5AD704\Thumb\6.bmp" />
+    <Content Include="Images\D565C143-2CB9-41B1-8522-AEEE0D5AD704\Thumb\7.bmp" />
+    <Content Include="Images\logo mic ORIGINAL.png" />
+    <Content Include="Images\logo mic ORIGINAL_cut.png" />
+    <Content Include="Images\logo mic1.png" />
+    <Content Include="Images\sample.jpg" />
+    <Content Include="Images\white background.bmp" />
+    <Content Include="jquery YoxView\data\flickr.js" />
+    <Content Include="jquery YoxView\data\flickr.source.js" />
+    <Content Include="jquery YoxView\data\picasa.js" />
+    <Content Include="jquery YoxView\data\picasa.source.js" />
+    <Content Include="jquery YoxView\data\youtube.js" />
+    <Content Include="jquery YoxView\data\youtube.source.js" />
+    <Content Include="jquery YoxView\images\empty.gif" />
+    <Content Include="jquery YoxView\images\help_panel.png" />
+    <Content Include="jquery YoxView\images\left.png" />
+    <Content Include="jquery YoxView\images\left_empty.png" />
+    <Content Include="jquery YoxView\images\left_eng.png" />
+    <Content Include="jquery YoxView\images\left_prev.png" />
+    <Content Include="jquery YoxView\images\popup_ajax_loader.gif" />
+    <Content Include="jquery YoxView\images\right.png" />
+    <Content Include="jquery YoxView\images\right_empty.png" />
+    <Content Include="jquery YoxView\images\right_eng.png" />
+    <Content Include="jquery YoxView\images\sprites.png" />
+    <Content Include="jquery YoxView\install.htm" />
+    <Content Include="jquery YoxView\jquery.yoxthumbs.js" />
+    <Content Include="jquery YoxView\jquery.yoxview-2.21.js" />
+    <Content Include="jquery YoxView\jquery.yoxview-2.21.min.js" />
+    <Content Include="jquery YoxView\lang\ar.js" />
+    <Content Include="jquery YoxView\lang\bg.js" />
+    <Content Include="jquery YoxView\lang\ca.js" />
+    <Content Include="jquery YoxView\lang\cs.js" />
+    <Content Include="jquery YoxView\lang\de.js" />
+    <Content Include="jquery YoxView\lang\dk.js" />
+    <Content Include="jquery YoxView\lang\en.js" />
+    <Content Include="jquery YoxView\lang\es.js" />
+    <Content Include="jquery YoxView\lang\fr.js" />
+    <Content Include="jquery YoxView\lang\gr.js" />
+    <Content Include="jquery YoxView\lang\he.js" />
+    <Content Include="jquery YoxView\lang\hu.js" />
+    <Content Include="jquery YoxView\lang\ie.js" />
+    <Content Include="jquery YoxView\lang\ir.js" />
+    <Content Include="jquery YoxView\lang\it.js" />
+    <Content Include="jquery YoxView\lang\ja.js" />
+    <Content Include="jquery YoxView\lang\mk.js" />
+    <Content Include="jquery YoxView\lang\nl.js" />
+    <Content Include="jquery YoxView\lang\pl.js" />
+    <Content Include="jquery YoxView\lang\pt-br.js" />
+    <Content Include="jquery YoxView\lang\pt.js" />
+    <Content Include="jquery YoxView\lang\ro.js" />
+    <Content Include="jquery YoxView\lang\ru.js" />
+    <Content Include="jquery YoxView\lang\sk.js" />
+    <Content Include="jquery YoxView\lang\sl.js" />
+    <Content Include="jquery YoxView\lang\sv.js" />
+    <Content Include="jquery YoxView\lang\tr.js" />
+    <Content Include="jquery YoxView\lang\ua.js" />
+    <Content Include="jquery YoxView\lang\zh-cn.js" />
+    <Content Include="jquery YoxView\lang\zh-tw.js" />
+    <Content Include="jquery YoxView\skins\top_menu\sprites.png" />
+    <Content Include="jquery YoxView\skins\top_menu\yoxview.top_menu.css" />
+    <Content Include="jquery YoxView\skins\top_menu\yoxview.top_menu.js" />
+    <Content Include="jquery YoxView\yox.js" />
+    <Content Include="jquery YoxView\yoxview-init.js" />
+    <Content Include="jquery YoxView\yoxview-nojquery.js" />
+    <Content Include="jquery YoxView\yoxview.css" />
+    <Content Include="jquery\css\ui-lightness\images\ui-bg_diagonals-thick_18_b81900_40x40.png" />
+    <Content Include="jquery\css\ui-lightness\images\ui-bg_diagonals-thick_20_666666_40x40.png" />
+    <Content Include="jquery\css\ui-lightness\images\ui-bg_flat_10_000000_40x100.png" />
+    <Content Include="jquery\css\ui-lightness\images\ui-bg_glass_100_f6f6f6_1x400.png" />
+    <Content Include="jquery\css\ui-lightness\images\ui-bg_glass_100_fdf5ce_1x400.png" />
+    <Content Include="jquery\css\ui-lightness\images\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="jquery\css\ui-lightness\images\ui-bg_gloss-wave_35_f6a828_500x100.png" />
+    <Content Include="jquery\css\ui-lightness\images\ui-bg_highlight-soft_100_eeeeee_1x100.png" />
+    <Content Include="jquery\css\ui-lightness\images\ui-bg_highlight-soft_75_ffe45c_1x100.png" />
+    <Content Include="jquery\css\ui-lightness\images\ui-icons_222222_256x240.png" />
+    <Content Include="jquery\css\ui-lightness\images\ui-icons_228ef1_256x240.png" />
+    <Content Include="jquery\css\ui-lightness\images\ui-icons_ef8c08_256x240.png" />
+    <Content Include="jquery\css\ui-lightness\images\ui-icons_ffd27a_256x240.png" />
+    <Content Include="jquery\css\ui-lightness\images\ui-icons_ffffff_256x240.png" />
+    <Content Include="jquery\css\ui-lightness\jquery-ui-1.8.18.custom.css" />
+    <Content Include="jquery\development-bundle\AUTHORS.txt" />
+    <Content Include="jquery\development-bundle\demos\accordion\collapsible.html" />
+    <Content Include="jquery\development-bundle\demos\accordion\custom-icons.html" />
+    <Content Include="jquery\development-bundle\demos\accordion\default.html" />
+    <Content Include="jquery\development-bundle\demos\accordion\fillspace.html" />
+    <Content Include="jquery\development-bundle\demos\accordion\hoverintent.html" />
+    <Content Include="jquery\development-bundle\demos\accordion\index.html" />
+    <Content Include="jquery\development-bundle\demos\accordion\mouseover.html" />
+    <Content Include="jquery\development-bundle\demos\accordion\no-auto-height.html" />
+    <Content Include="jquery\development-bundle\demos\accordion\sortable.html" />
+    <Content Include="jquery\development-bundle\demos\addClass\default.html" />
+    <Content Include="jquery\development-bundle\demos\addClass\index.html" />
+    <Content Include="jquery\development-bundle\demos\animate\default.html" />
+    <Content Include="jquery\development-bundle\demos\animate\index.html" />
+    <Content Include="jquery\development-bundle\demos\autocomplete\categories.html" />
+    <Content Include="jquery\development-bundle\demos\autocomplete\combobox.html" />
+    <Content Include="jquery\development-bundle\demos\autocomplete\custom-data.html" />
+    <Content Include="jquery\development-bundle\demos\autocomplete\default.html" />
+    <Content Include="jquery\development-bundle\demos\autocomplete\folding.html" />
+    <Content Include="jquery\development-bundle\demos\autocomplete\images\jqueryui_32x32.png" />
+    <Content Include="jquery\development-bundle\demos\autocomplete\images\jquery_32x32.png" />
+    <Content Include="jquery\development-bundle\demos\autocomplete\images\sizzlejs_32x32.png" />
+    <Content Include="jquery\development-bundle\demos\autocomplete\images\transparent_1x1.png" />
+    <Content Include="jquery\development-bundle\demos\autocomplete\images\ui-anim_basic_16x16.gif" />
+    <Content Include="jquery\development-bundle\demos\autocomplete\index.html" />
+    <Content Include="jquery\development-bundle\demos\autocomplete\london.xml" />
+    <Content Include="jquery\development-bundle\demos\autocomplete\maxheight.html" />
+    <Content Include="jquery\development-bundle\demos\autocomplete\multiple-remote.html" />
+    <Content Include="jquery\development-bundle\demos\autocomplete\multiple.html" />
+    <Content Include="jquery\development-bundle\demos\autocomplete\remote-jsonp.html" />
+    <Content Include="jquery\development-bundle\demos\autocomplete\remote-with-cache.html" />
+    <Content Include="jquery\development-bundle\demos\autocomplete\remote.html" />
+    <Content Include="jquery\development-bundle\demos\autocomplete\xml.html" />
+    <Content Include="jquery\development-bundle\demos\button\checkbox.html" />
+    <Content Include="jquery\development-bundle\demos\button\default.html" />
+    <Content Include="jquery\development-bundle\demos\button\icons.html" />
+    <Content Include="jquery\development-bundle\demos\button\index.html" />
+    <Content Include="jquery\development-bundle\demos\button\radio.html" />
+    <Content Include="jquery\development-bundle\demos\button\splitbutton.html" />
+    <Content Include="jquery\development-bundle\demos\button\toolbar.html" />
+    <Content Include="jquery\development-bundle\demos\datepicker\alt-field.html" />
+    <Content Include="jquery\development-bundle\demos\datepicker\animation.html" />
+    <Content Include="jquery\development-bundle\demos\datepicker\buttonbar.html" />
+    <Content Include="jquery\development-bundle\demos\datepicker\date-formats.html" />
+    <Content Include="jquery\development-bundle\demos\datepicker\date-range.html" />
+    <Content Include="jquery\development-bundle\demos\datepicker\default.html" />
+    <Content Include="jquery\development-bundle\demos\datepicker\dropdown-month-year.html" />
+    <Content Include="jquery\development-bundle\demos\datepicker\icon-trigger.html" />
+    <Content Include="jquery\development-bundle\demos\datepicker\images\calendar.gif" />
+    <Content Include="jquery\development-bundle\demos\datepicker\index.html" />
+    <Content Include="jquery\development-bundle\demos\datepicker\inline.html" />
+    <Content Include="jquery\development-bundle\demos\datepicker\localization.html" />
+    <Content Include="jquery\development-bundle\demos\datepicker\min-max.html" />
+    <Content Include="jquery\development-bundle\demos\datepicker\multiple-calendars.html" />
+    <Content Include="jquery\development-bundle\demos\datepicker\other-months.html" />
+    <Content Include="jquery\development-bundle\demos\datepicker\show-week.html" />
+    <Content Include="jquery\development-bundle\demos\demos.css" />
+    <Content Include="jquery\development-bundle\demos\dialog\animated.html" />
+    <Content Include="jquery\development-bundle\demos\dialog\default.html" />
+    <Content Include="jquery\development-bundle\demos\dialog\index.html" />
+    <Content Include="jquery\development-bundle\demos\dialog\modal-confirmation.html" />
+    <Content Include="jquery\development-bundle\demos\dialog\modal-form.html" />
+    <Content Include="jquery\development-bundle\demos\dialog\modal-message.html" />
+    <Content Include="jquery\development-bundle\demos\dialog\modal.html" />
+    <Content Include="jquery\development-bundle\demos\draggable\constrain-movement.html" />
+    <Content Include="jquery\development-bundle\demos\draggable\cursor-style.html" />
+    <Content Include="jquery\development-bundle\demos\draggable\default.html" />
+    <Content Include="jquery\development-bundle\demos\draggable\delay-start.html" />
+    <Content Include="jquery\development-bundle\demos\draggable\events.html" />
+    <Content Include="jquery\development-bundle\demos\draggable\handle.html" />
+    <Content Include="jquery\development-bundle\demos\draggable\index.html" />
+    <Content Include="jquery\development-bundle\demos\draggable\revert.html" />
+    <Content Include="jquery\development-bundle\demos\draggable\scroll.html" />
+    <Content Include="jquery\development-bundle\demos\draggable\snap-to.html" />
+    <Content Include="jquery\development-bundle\demos\draggable\sortable.html" />
+    <Content Include="jquery\development-bundle\demos\draggable\visual-feedback.html" />
+    <Content Include="jquery\development-bundle\demos\droppable\accepted-elements.html" />
+    <Content Include="jquery\development-bundle\demos\droppable\default.html" />
+    <Content Include="jquery\development-bundle\demos\droppable\images\high_tatras.jpg" />
+    <Content Include="jquery\development-bundle\demos\droppable\images\high_tatras2.jpg" />
+    <Content Include="jquery\development-bundle\demos\droppable\images\high_tatras2_min.jpg" />
+    <Content Include="jquery\development-bundle\demos\droppable\images\high_tatras3.jpg" />
+    <Content Include="jquery\development-bundle\demos\droppable\images\high_tatras3_min.jpg" />
+    <Content Include="jquery\development-bundle\demos\droppable\images\high_tatras4.jpg" />
+    <Content Include="jquery\development-bundle\demos\droppable\images\high_tatras4_min.jpg" />
+    <Content Include="jquery\development-bundle\demos\droppable\images\high_tatras_min.jpg" />
+    <Content Include="jquery\development-bundle\demos\droppable\index.html" />
+    <Content Include="jquery\development-bundle\demos\droppable\photo-manager.html" />
+    <Content Include="jquery\development-bundle\demos\droppable\propagation.html" />
+    <Content Include="jquery\development-bundle\demos\droppable\revert.html" />
+    <Content Include="jquery\development-bundle\demos\droppable\shopping-cart.html" />
+    <Content Include="jquery\development-bundle\demos\droppable\visual-feedback.html" />
+    <Content Include="jquery\development-bundle\demos\effect\default.html" />
+    <Content Include="jquery\development-bundle\demos\effect\easing.html" />
+    <Content Include="jquery\development-bundle\demos\effect\index.html" />
+    <Content Include="jquery\development-bundle\demos\hide\default.html" />
+    <Content Include="jquery\development-bundle\demos\hide\index.html" />
+    <Content Include="jquery\development-bundle\demos\images\calendar.gif" />
+    <Content Include="jquery\development-bundle\demos\images\demo-config-on-tile.gif" />
+    <Content Include="jquery\development-bundle\demos\images\demo-config-on.gif" />
+    <Content Include="jquery\development-bundle\demos\images\demo-spindown-closed.gif" />
+    <Content Include="jquery\development-bundle\demos\images\demo-spindown-open.gif" />
+    <Content Include="jquery\development-bundle\demos\images\icon-docs-info.gif" />
+    <Content Include="jquery\development-bundle\demos\images\pbar-ani.gif" />
+    <Content Include="jquery\development-bundle\demos\index.html" />
+    <Content Include="jquery\development-bundle\demos\position\cycler.html" />
+    <Content Include="jquery\development-bundle\demos\position\default.html" />
+    <Content Include="jquery\development-bundle\demos\position\images\earth.jpg" />
+    <Content Include="jquery\development-bundle\demos\position\images\flight.jpg" />
+    <Content Include="jquery\development-bundle\demos\position\images\rocket.jpg" />
+    <Content Include="jquery\development-bundle\demos\position\index.html" />
+    <Content Include="jquery\development-bundle\demos\progressbar\animated.html" />
+    <Content Include="jquery\development-bundle\demos\progressbar\default.html" />
+    <Content Include="jquery\development-bundle\demos\progressbar\images\pbar-ani.gif" />
+    <Content Include="jquery\development-bundle\demos\progressbar\index.html" />
+    <Content Include="jquery\development-bundle\demos\progressbar\resize.html" />
+    <Content Include="jquery\development-bundle\demos\removeClass\default.html" />
+    <Content Include="jquery\development-bundle\demos\removeClass\index.html" />
+    <Content Include="jquery\development-bundle\demos\resizable\animate.html" />
+    <Content Include="jquery\development-bundle\demos\resizable\aspect-ratio.html" />
+    <Content Include="jquery\development-bundle\demos\resizable\constrain-area.html" />
+    <Content Include="jquery\development-bundle\demos\resizable\default.html" />
+    <Content Include="jquery\development-bundle\demos\resizable\delay-start.html" />
+    <Content Include="jquery\development-bundle\demos\resizable\helper.html" />
+    <Content Include="jquery\development-bundle\demos\resizable\index.html" />
+    <Content Include="jquery\development-bundle\demos\resizable\max-min.html" />
+    <Content Include="jquery\development-bundle\demos\resizable\snap-to-grid.html" />
+    <Content Include="jquery\development-bundle\demos\resizable\synchronous-resize.html" />
+    <Content Include="jquery\development-bundle\demos\resizable\textarea.html" />
+    <Content Include="jquery\development-bundle\demos\resizable\visual-feedback.html" />
+    <Content Include="jquery\development-bundle\demos\selectable\default.html" />
+    <Content Include="jquery\development-bundle\demos\selectable\display-grid.html" />
+    <Content Include="jquery\development-bundle\demos\selectable\index.html" />
+    <Content Include="jquery\development-bundle\demos\selectable\serialize.html" />
+    <Content Include="jquery\development-bundle\demos\show\default.html" />
+    <Content Include="jquery\development-bundle\demos\show\index.html" />
+    <Content Include="jquery\development-bundle\demos\slider\colorpicker.html" />
+    <Content Include="jquery\development-bundle\demos\slider\default.html" />
+    <Content Include="jquery\development-bundle\demos\slider\hotelrooms.html" />
+    <Content Include="jquery\development-bundle\demos\slider\index.html" />
+    <Content Include="jquery\development-bundle\demos\slider\multiple-vertical.html" />
+    <Content Include="jquery\development-bundle\demos\slider\range-vertical.html" />
+    <Content Include="jquery\development-bundle\demos\slider\range.html" />
+    <Content Include="jquery\development-bundle\demos\slider\rangemax.html" />
+    <Content Include="jquery\development-bundle\demos\slider\rangemin.html" />
+    <Content Include="jquery\development-bundle\demos\slider\side-scroll.html" />
+    <Content Include="jquery\development-bundle\demos\slider\slider-vertical.html" />
+    <Content Include="jquery\development-bundle\demos\slider\steps.html" />
+    <Content Include="jquery\development-bundle\demos\slider\tabs.html" />
+    <Content Include="jquery\development-bundle\demos\sortable\connect-lists-through-tabs.html" />
+    <Content Include="jquery\development-bundle\demos\sortable\connect-lists.html" />
+    <Content Include="jquery\development-bundle\demos\sortable\default.html" />
+    <Content Include="jquery\development-bundle\demos\sortable\delay-start.html" />
+    <Content Include="jquery\development-bundle\demos\sortable\display-grid.html" />
+    <Content Include="jquery\development-bundle\demos\sortable\empty-lists.html" />
+    <Content Include="jquery\development-bundle\demos\sortable\index.html" />
+    <Content Include="jquery\development-bundle\demos\sortable\items.html" />
+    <Content Include="jquery\development-bundle\demos\sortable\placeholder.html" />
+    <Content Include="jquery\development-bundle\demos\sortable\portlets.html" />
+    <Content Include="jquery\development-bundle\demos\switchClass\default.html" />
+    <Content Include="jquery\development-bundle\demos\switchClass\index.html" />
+    <Content Include="jquery\development-bundle\demos\tabs\ajax.html" />
+    <Content Include="jquery\development-bundle\demos\tabs\ajax\content1.html" />
+    <Content Include="jquery\development-bundle\demos\tabs\ajax\content2.html" />
+    <Content Include="jquery\development-bundle\demos\tabs\bottom.html" />
+    <Content Include="jquery\development-bundle\demos\tabs\collapsible.html" />
+    <Content Include="jquery\development-bundle\demos\tabs\cookie.html" />
+    <Content Include="jquery\development-bundle\demos\tabs\default.html" />
+    <Content Include="jquery\development-bundle\demos\tabs\index.html" />
+    <Content Include="jquery\development-bundle\demos\tabs\manipulation.html" />
+    <Content Include="jquery\development-bundle\demos\tabs\mouseover.html" />
+    <Content Include="jquery\development-bundle\demos\tabs\sortable.html" />
+    <Content Include="jquery\development-bundle\demos\tabs\vertical.html" />
+    <Content Include="jquery\development-bundle\demos\toggleClass\default.html" />
+    <Content Include="jquery\development-bundle\demos\toggleClass\index.html" />
+    <Content Include="jquery\development-bundle\demos\toggle\default.html" />
+    <Content Include="jquery\development-bundle\demos\toggle\index.html" />
+    <Content Include="jquery\development-bundle\docs\accordion.html" />
+    <Content Include="jquery\development-bundle\docs\addClass.html" />
+    <Content Include="jquery\development-bundle\docs\animate.html" />
+    <Content Include="jquery\development-bundle\docs\autocomplete.html" />
+    <Content Include="jquery\development-bundle\docs\button.html" />
+    <Content Include="jquery\development-bundle\docs\datepicker.html" />
+    <Content Include="jquery\development-bundle\docs\dialog.html" />
+    <Content Include="jquery\development-bundle\docs\draggable.html" />
+    <Content Include="jquery\development-bundle\docs\droppable.html" />
+    <Content Include="jquery\development-bundle\docs\effect.html" />
+    <Content Include="jquery\development-bundle\docs\hide.html" />
+    <Content Include="jquery\development-bundle\docs\position.html" />
+    <Content Include="jquery\development-bundle\docs\progressbar.html" />
+    <Content Include="jquery\development-bundle\docs\removeClass.html" />
+    <Content Include="jquery\development-bundle\docs\resizable.html" />
+    <Content Include="jquery\development-bundle\docs\selectable.html" />
+    <Content Include="jquery\development-bundle\docs\show.html" />
+    <Content Include="jquery\development-bundle\docs\slider.html" />
+    <Content Include="jquery\development-bundle\docs\sortable.html" />
+    <Content Include="jquery\development-bundle\docs\switchClass.html" />
+    <Content Include="jquery\development-bundle\docs\tabs.html" />
+    <Content Include="jquery\development-bundle\docs\toggle.html" />
+    <Content Include="jquery\development-bundle\docs\toggleClass.html" />
+    <Content Include="jquery\development-bundle\external\jquery.bgiframe-2.1.2.js" />
+    <Content Include="jquery\development-bundle\external\jquery.cookie.js" />
+    <Content Include="jquery\development-bundle\external\jquery.metadata.js" />
+    <Content Include="jquery\development-bundle\external\qunit.css" />
+    <Content Include="jquery\development-bundle\external\qunit.js" />
+    <Content Include="jquery\development-bundle\GPL-LICENSE.txt" />
+    <Content Include="jquery\development-bundle\jquery-1.7.1.js" />
+    <Content Include="jquery\development-bundle\MIT-LICENSE.txt" />
+    <Content Include="jquery\development-bundle\themes\base\images\ui-bg_flat_0_aaaaaa_40x100.png" />
+    <Content Include="jquery\development-bundle\themes\base\images\ui-bg_flat_75_ffffff_40x100.png" />
+    <Content Include="jquery\development-bundle\themes\base\images\ui-bg_glass_55_fbf9ee_1x400.png" />
+    <Content Include="jquery\development-bundle\themes\base\images\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="jquery\development-bundle\themes\base\images\ui-bg_glass_75_dadada_1x400.png" />
+    <Content Include="jquery\development-bundle\themes\base\images\ui-bg_glass_75_e6e6e6_1x400.png" />
+    <Content Include="jquery\development-bundle\themes\base\images\ui-bg_glass_95_fef1ec_1x400.png" />
+    <Content Include="jquery\development-bundle\themes\base\images\ui-bg_highlight-soft_75_cccccc_1x100.png" />
+    <Content Include="jquery\development-bundle\themes\base\images\ui-icons_222222_256x240.png" />
+    <Content Include="jquery\development-bundle\themes\base\images\ui-icons_2e83ff_256x240.png" />
+    <Content Include="jquery\development-bundle\themes\base\images\ui-icons_454545_256x240.png" />
+    <Content Include="jquery\development-bundle\themes\base\images\ui-icons_888888_256x240.png" />
+    <Content Include="jquery\development-bundle\themes\base\images\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="jquery\development-bundle\themes\base\jquery.ui.accordion.css" />
+    <Content Include="jquery\development-bundle\themes\base\jquery.ui.all.css" />
+    <Content Include="jquery\development-bundle\themes\base\jquery.ui.autocomplete.css" />
+    <Content Include="jquery\development-bundle\themes\base\jquery.ui.base.css" />
+    <Content Include="jquery\development-bundle\themes\base\jquery.ui.button.css" />
+    <Content Include="jquery\development-bundle\themes\base\jquery.ui.core.css" />
+    <Content Include="jquery\development-bundle\themes\base\jquery.ui.datepicker.css" />
+    <Content Include="jquery\development-bundle\themes\base\jquery.ui.dialog.css" />
+    <Content Include="jquery\development-bundle\themes\base\jquery.ui.progressbar.css" />
+    <Content Include="jquery\development-bundle\themes\base\jquery.ui.resizable.css" />
+    <Content Include="jquery\development-bundle\themes\base\jquery.ui.selectable.css" />
+    <Content Include="jquery\development-bundle\themes\base\jquery.ui.slider.css" />
+    <Content Include="jquery\development-bundle\themes\base\jquery.ui.tabs.css" />
+    <Content Include="jquery\development-bundle\themes\base\jquery.ui.theme.css" />
+    <Content Include="jquery\development-bundle\themes\ui-lightness\images\ui-bg_diagonals-thick_18_b81900_40x40.png" />
+    <Content Include="jquery\development-bundle\themes\ui-lightness\images\ui-bg_diagonals-thick_20_666666_40x40.png" />
+    <Content Include="jquery\development-bundle\themes\ui-lightness\images\ui-bg_flat_10_000000_40x100.png" />
+    <Content Include="jquery\development-bundle\themes\ui-lightness\images\ui-bg_glass_100_f6f6f6_1x400.png" />
+    <Content Include="jquery\development-bundle\themes\ui-lightness\images\ui-bg_glass_100_fdf5ce_1x400.png" />
+    <Content Include="jquery\development-bundle\themes\ui-lightness\images\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="jquery\development-bundle\themes\ui-lightness\images\ui-bg_gloss-wave_35_f6a828_500x100.png" />
+    <Content Include="jquery\development-bundle\themes\ui-lightness\images\ui-bg_highlight-soft_100_eeeeee_1x100.png" />
+    <Content Include="jquery\development-bundle\themes\ui-lightness\images\ui-bg_highlight-soft_75_ffe45c_1x100.png" />
+    <Content Include="jquery\development-bundle\themes\ui-lightness\images\ui-icons_222222_256x240.png" />
+    <Content Include="jquery\development-bundle\themes\ui-lightness\images\ui-icons_228ef1_256x240.png" />
+    <Content Include="jquery\development-bundle\themes\ui-lightness\images\ui-icons_ef8c08_256x240.png" />
+    <Content Include="jquery\development-bundle\themes\ui-lightness\images\ui-icons_ffd27a_256x240.png" />
+    <Content Include="jquery\development-bundle\themes\ui-lightness\images\ui-icons_ffffff_256x240.png" />
+    <Content Include="jquery\development-bundle\themes\ui-lightness\jquery-ui-1.8.18.custom.css" />
+    <Content Include="jquery\development-bundle\themes\ui-lightness\jquery.ui.accordion.css" />
+    <Content Include="jquery\development-bundle\themes\ui-lightness\jquery.ui.all.css" />
+    <Content Include="jquery\development-bundle\themes\ui-lightness\jquery.ui.autocomplete.css" />
+    <Content Include="jquery\development-bundle\themes\ui-lightness\jquery.ui.base.css" />
+    <Content Include="jquery\development-bundle\themes\ui-lightness\jquery.ui.button.css" />
+    <Content Include="jquery\development-bundle\themes\ui-lightness\jquery.ui.core.css" />
+    <Content Include="jquery\development-bundle\themes\ui-lightness\jquery.ui.datepicker.css" />
+    <Content Include="jquery\development-bundle\themes\ui-lightness\jquery.ui.dialog.css" />
+    <Content Include="jquery\development-bundle\themes\ui-lightness\jquery.ui.progressbar.css" />
+    <Content Include="jquery\development-bundle\themes\ui-lightness\jquery.ui.resizable.css" />
+    <Content Include="jquery\development-bundle\themes\ui-lightness\jquery.ui.selectable.css" />
+    <Content Include="jquery\development-bundle\themes\ui-lightness\jquery.ui.slider.css" />
+    <Content Include="jquery\development-bundle\themes\ui-lightness\jquery.ui.tabs.css" />
+    <Content Include="jquery\development-bundle\themes\ui-lightness\jquery.ui.theme.css" />
+    <Content Include="jquery\development-bundle\ui\i18n\jquery-ui-i18n.js" />
+    <Content Include="jquery\development-bundle\ui\i18n\jquery.ui.datepicker-af.js" />
+    <Content Include="jquery\development-bundle\ui\i18n\jquery.ui.datepicker-ar-DZ.js" />
+    <Content Include="jquery\development-bundle\ui\i18n\jquery.ui.datepicker-ar.js" />
+    <Content Include="jquery\development-bundle\ui\i18n\jquery.ui.datepicker-az.js" />
+    <Content Include="jquery\development-bundle\ui\i18n\jquery.ui.datepicker-bg.js" />
+    <Content Include="jquery\development-bundle\ui\i18n\jquery.ui.datepicker-bs.js" />
+    <Content Include="jquery\development-bundle\ui\i18n\jquery.ui.datepicker-ca.js" />
+    <Content Include="jquery\development-bundle\ui\i18n\jquery.ui.datepicker-cs.js" />
+    <Content Include="jquery\development-bundle\ui\i18n\jquery.ui.datepicker-cy-GB.js" />
+    <Content Include="jquery\development-bundle\ui\i18n\jquery.ui.datepicker-da.js" />
+    <Content Include="jquery\development-bundle\ui\i18n\jquery.ui.datepicker-de.js" />
+    <Content Include="jquery\development-bundle\ui\i18n\jquery.ui.datepicker-el.js" />
+    <Content Include="jquery\development-bundle\ui\i18n\jquery.ui.datepicker-en-AU.js" />
+    <Content Include="jquery\development-bundle\ui\i18n\jquery.ui.datepicker-en-GB.js" />
+    <Content Include="jquery\development-bundle\ui\i18n\jquery.ui.datepicker-en-NZ.js" />
+    <Content Include="jquery\development-bundle\ui\i18n\jquery.ui.datepicker-eo.js" />
+    <Content Include="jquery\development-bundle\ui\i18n\jquery.ui.datepicker-es.js" />
+    <Content Include="jquery\development-bundle\ui\i18n\jquery.ui.datepicker-et.js" />
+    <Content Include="jquery\development-bundle\ui\i18n\jquery.ui.datepicker-eu.js" />
+    <Content Include="jquery\development-bundle\ui\i18n\jquery.ui.datepicker-fa.js" />
+    <Content Include="jquery\development-bundle\ui\i18n\jquery.ui.datepicker-fi.js" />
+    <Content Include="jquery\development-bundle\ui\i18n\jquery.ui.datepicker-fo.js" />
+    <Content Include="jquery\development-bundle\ui\i18n\jquery.ui.datepicker-fr-CH.js" />
+    <Content Include="jquery\development-bundle\ui\i18n\jquery.ui.datepicker-fr.js" />
+    <Content Include="jquery\development-bundle\ui\i18n\jquery.ui.datepicker-gl.js" />
+    <Content Include="jquery\development-bundle\ui\i18n\jquery.ui.datepicker-he.js" />
+    <Content Include="jquery\development-bundle\ui\i18n\jquery.ui.datepicker-hi.js" />
+    <Content Include="jquery\development-bundle\ui\i18n\jquery.ui.datepicker-hr.js" />
+    <Content Include="jquery\development-bundle\ui\i18n\jquery.ui.datepicker-hu.js" />
+    <Content Include="jquery\development-bundle\ui\i18n\jquery.ui.datepicker-hy.js" />
+    <Content Include="jquery\development-bundle\ui\i18n\jquery.ui.datepicker-id.js" />
+    <Content Include="jquery\development-bundle\ui\i18n\jquery.ui.datepicker-is.js" />
+    <Content Include="jquery\development-bundle\ui\i18n\jquery.ui.datepicker-it.js" />
+    <Content Include="jquery\development-bundle\ui\i18n\jquery.ui.datepicker-ja.js" />
+    <Content Include="jquery\development-bundle\ui\i18n\jquery.ui.datepicker-kk.js" />
+    <Content Include="jquery\development-bundle\ui\i18n\jquery.ui.datepicker-km.js" />
+    <Content Include="jquery\development-bundle\ui\i18n\jquery.ui.datepicker-ko.js" />
+    <Content Include="jquery\development-bundle\ui\i18n\jquery.ui.datepicker-lb.js" />
+    <Content Include="jquery\development-bundle\ui\i18n\jquery.ui.datepicker-lt.js" />
+    <Content Include="jquery\development-bundle\ui\i18n\jquery.ui.datepicker-lv.js" />
+    <Content Include="jquery\development-bundle\ui\i18n\jquery.ui.datepicker-mk.js" />
+    <Content Include="jquery\development-bundle\ui\i18n\jquery.ui.datepicker-ml.js" />
+    <Content Include="jquery\development-bundle\ui\i18n\jquery.ui.datepicker-ms.js" />
+    <Content Include="jquery\development-bundle\ui\i18n\jquery.ui.datepicker-nl-BE.js" />
+    <Content Include="jquery\development-bundle\ui\i18n\jquery.ui.datepicker-nl.js" />
+    <Content Include="jquery\development-bundle\ui\i18n\jquery.ui.datepicker-no.js" />
+    <Content Include="jquery\development-bundle\ui\i18n\jquery.ui.datepicker-pl.js" />
+    <Content Include="jquery\development-bundle\ui\i18n\jquery.ui.datepicker-pt-BR.js" />
+    <Content Include="jquery\development-bundle\ui\i18n\jquery.ui.datepicker-pt.js" />
+    <Content Include="jquery\development-bundle\ui\i18n\jquery.ui.datepicker-rm.js" />
+    <Content Include="jquery\development-bundle\ui\i18n\jquery.ui.datepicker-ro.js" />
+    <Content Include="jquery\development-bundle\ui\i18n\jquery.ui.datepicker-ru.js" />
+    <Content Include="jquery\development-bundle\ui\i18n\jquery.ui.datepicker-sk.js" />
+    <Content Include="jquery\development-bundle\ui\i18n\jquery.ui.datepicker-sl.js" />
+    <Content Include="jquery\development-bundle\ui\i18n\jquery.ui.datepicker-sq.js" />
+    <Content Include="jquery\development-bundle\ui\i18n\jquery.ui.datepicker-sr-SR.js" />
+    <Content Include="jquery\development-bundle\ui\i18n\jquery.ui.datepicker-sr.js" />
+    <Content Include="jquery\development-bundle\ui\i18n\jquery.ui.datepicker-sv.js" />
+    <Content Include="jquery\development-bundle\ui\i18n\jquery.ui.datepicker-ta.js" />
+    <Content Include="jquery\development-bundle\ui\i18n\jquery.ui.datepicker-th.js" />
+    <Content Include="jquery\development-bundle\ui\i18n\jquery.ui.datepicker-tj.js" />
+    <Content Include="jquery\development-bundle\ui\i18n\jquery.ui.datepicker-tr.js" />
+    <Content Include="jquery\development-bundle\ui\i18n\jquery.ui.datepicker-uk.js" />
+    <Content Include="jquery\development-bundle\ui\i18n\jquery.ui.datepicker-vi.js" />
+    <Content Include="jquery\development-bundle\ui\i18n\jquery.ui.datepicker-zh-CN.js" />
+    <Content Include="jquery\development-bundle\ui\i18n\jquery.ui.datepicker-zh-HK.js" />
+    <Content Include="jquery\development-bundle\ui\i18n\jquery.ui.datepicker-zh-TW.js" />
+    <Content Include="jquery\development-bundle\ui\jquery-ui-1.8.18.custom.js" />
+    <Content Include="jquery\development-bundle\ui\jquery.effects.blind.js" />
+    <Content Include="jquery\development-bundle\ui\jquery.effects.bounce.js" />
+    <Content Include="jquery\development-bundle\ui\jquery.effects.clip.js" />
+    <Content Include="jquery\development-bundle\ui\jquery.effects.core.js" />
+    <Content Include="jquery\development-bundle\ui\jquery.effects.drop.js" />
+    <Content Include="jquery\development-bundle\ui\jquery.effects.explode.js" />
+    <Content Include="jquery\development-bundle\ui\jquery.effects.fade.js" />
+    <Content Include="jquery\development-bundle\ui\jquery.effects.fold.js" />
+    <Content Include="jquery\development-bundle\ui\jquery.effects.highlight.js" />
+    <Content Include="jquery\development-bundle\ui\jquery.effects.pulsate.js" />
+    <Content Include="jquery\development-bundle\ui\jquery.effects.scale.js" />
+    <Content Include="jquery\development-bundle\ui\jquery.effects.shake.js" />
+    <Content Include="jquery\development-bundle\ui\jquery.effects.slide.js" />
+    <Content Include="jquery\development-bundle\ui\jquery.effects.transfer.js" />
+    <Content Include="jquery\development-bundle\ui\jquery.ui.accordion.js" />
+    <Content Include="jquery\development-bundle\ui\jquery.ui.autocomplete.js" />
+    <Content Include="jquery\development-bundle\ui\jquery.ui.button.js" />
+    <Content Include="jquery\development-bundle\ui\jquery.ui.core.js" />
+    <Content Include="jquery\development-bundle\ui\jquery.ui.datepicker.js" />
+    <Content Include="jquery\development-bundle\ui\jquery.ui.dialog.js" />
+    <Content Include="jquery\development-bundle\ui\jquery.ui.draggable.js" />
+    <Content Include="jquery\development-bundle\ui\jquery.ui.droppable.js" />
+    <Content Include="jquery\development-bundle\ui\jquery.ui.mouse.js" />
+    <Content Include="jquery\development-bundle\ui\jquery.ui.position.js" />
+    <Content Include="jquery\development-bundle\ui\jquery.ui.progressbar.js" />
+    <Content Include="jquery\development-bundle\ui\jquery.ui.resizable.js" />
+    <Content Include="jquery\development-bundle\ui\jquery.ui.selectable.js" />
+    <Content Include="jquery\development-bundle\ui\jquery.ui.slider.js" />
+    <Content Include="jquery\development-bundle\ui\jquery.ui.sortable.js" />
+    <Content Include="jquery\development-bundle\ui\jquery.ui.tabs.js" />
+    <Content Include="jquery\development-bundle\ui\jquery.ui.widget.js" />
+    <Content Include="jquery\development-bundle\ui\minified\jquery.effects.blind.min.js" />
+    <Content Include="jquery\development-bundle\ui\minified\jquery.effects.bounce.min.js" />
+    <Content Include="jquery\development-bundle\ui\minified\jquery.effects.clip.min.js" />
+    <Content Include="jquery\development-bundle\ui\minified\jquery.effects.core.min.js" />
+    <Content Include="jquery\development-bundle\ui\minified\jquery.effects.drop.min.js" />
+    <Content Include="jquery\development-bundle\ui\minified\jquery.effects.explode.min.js" />
+    <Content Include="jquery\development-bundle\ui\minified\jquery.effects.fade.min.js" />
+    <Content Include="jquery\development-bundle\ui\minified\jquery.effects.fold.min.js" />
+    <Content Include="jquery\development-bundle\ui\minified\jquery.effects.highlight.min.js" />
+    <Content Include="jquery\development-bundle\ui\minified\jquery.effects.pulsate.min.js" />
+    <Content Include="jquery\development-bundle\ui\minified\jquery.effects.scale.min.js" />
+    <Content Include="jquery\development-bundle\ui\minified\jquery.effects.shake.min.js" />
+    <Content Include="jquery\development-bundle\ui\minified\jquery.effects.slide.min.js" />
+    <Content Include="jquery\development-bundle\ui\minified\jquery.effects.transfer.min.js" />
+    <Content Include="jquery\development-bundle\ui\minified\jquery.ui.accordion.min.js" />
+    <Content Include="jquery\development-bundle\ui\minified\jquery.ui.autocomplete.min.js" />
+    <Content Include="jquery\development-bundle\ui\minified\jquery.ui.button.min.js" />
+    <Content Include="jquery\development-bundle\ui\minified\jquery.ui.core.min.js" />
+    <Content Include="jquery\development-bundle\ui\minified\jquery.ui.datepicker.min.js" />
+    <Content Include="jquery\development-bundle\ui\minified\jquery.ui.dialog.min.js" />
+    <Content Include="jquery\development-bundle\ui\minified\jquery.ui.draggable.min.js" />
+    <Content Include="jquery\development-bundle\ui\minified\jquery.ui.droppable.min.js" />
+    <Content Include="jquery\development-bundle\ui\minified\jquery.ui.mouse.min.js" />
+    <Content Include="jquery\development-bundle\ui\minified\jquery.ui.position.min.js" />
+    <Content Include="jquery\development-bundle\ui\minified\jquery.ui.progressbar.min.js" />
+    <Content Include="jquery\development-bundle\ui\minified\jquery.ui.resizable.min.js" />
+    <Content Include="jquery\development-bundle\ui\minified\jquery.ui.selectable.min.js" />
+    <Content Include="jquery\development-bundle\ui\minified\jquery.ui.slider.min.js" />
+    <Content Include="jquery\development-bundle\ui\minified\jquery.ui.sortable.min.js" />
+    <Content Include="jquery\development-bundle\ui\minified\jquery.ui.tabs.min.js" />
+    <Content Include="jquery\development-bundle\ui\minified\jquery.ui.widget.min.js" />
+    <Content Include="jquery\development-bundle\version.txt" />
+    <Content Include="jquery\index.html" />
+    <Content Include="jquery\jquery.js" />
+    <Content Include="jquery\js\jquery-1.7.1.min.js" />
+    <Content Include="jquery\js\jquery-ui-1.8.18.custom.min.js" />
+    <Content Include="NewTrackInfo.aspx" />
+    <Content Include="obj\Debug\HDBiking.csproj.FileListAbsolute.txt" />
+    <Content Include="Pagine di prova\LoginTest.aspx" />
+    <Content Include="Pagine di prova\PopupLoginControl.ascx" />
+    <Content Include="Pagine di prova\ProvaUrl.aspx" />
+    <Content Include="Pagine di prova\TempCode.aspx" />
+    <Content Include="Pagine di prova\TempCode2.aspx" />
+    <Content Include="Pagine di prova\TempCode3.aspx" />
+    <Content Include="Pagine di prova\TempCode3ascx.ascx" />
+    <Content Include="progress-indicator.gif" />
+    <Content Include="Scripts\expressInstall.swf" />
+    <Content Include="Scripts\FlagDiv.js" />
+    <Content Include="Scripts\swfobject.js" />
+    <Content Include="Global.asax" />
+    <Content Include="Scripts\jquery-1.4.1-vsdoc.js" />
+    <Content Include="Scripts\jquery-1.4.1.js" />
+    <Content Include="Scripts\jquery-1.4.1.min.js" />
+    <Content Include="Styles\Site.css" />
+    <Content Include="TrackPage.aspx" />
+    <Content Include="UserControls\CountryFlag.ascx" />
+    <Content Include="UserControls\NewPageTemplate\InputWinVideos.ascx" />
+    <Content Include="UserControls\NewPageTemplate\SectionDescription.ascx" />
+    <Content Include="UserControls\NewPageTemplate\SectionMap.ascx" />
+    <Content Include="UserControls\NewPageTemplate\SectionPictures.ascx" />
+    <Content Include="UserControls\NewPageTemplate\SectionRadios.ascx" />
+    <Content Include="UserControls\NewPageTemplate\SectionTitleDescr.ascx" />
+    <Content Include="UserControls\NewPageTemplate\SectionVideos.ascx" />
+    <Content Include="UserControls\RadioPlayerGuest.ascx" />
+    <Content Include="UserControls\VideoPageCode.ascx" />
+    <Content Include="UserControls\VideoPageCodeB.ascx" />
+    <Content Include="UserControls\VideoPageCodeC.ascx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="About.aspx.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="About.aspx.designer.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\ChangePassword.aspx.cs">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\ChangePassword.aspx.designer.cs">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\ChangePasswordSuccess.aspx.cs">
+      <DependentUpon>ChangePasswordSuccess.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\ChangePasswordSuccess.aspx.designer.cs">
+      <DependentUpon>ChangePasswordSuccess.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\MyAccount.aspx.cs">
+      <DependentUpon>MyAccount.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\MyAccount.aspx.designer.cs">
+      <DependentUpon>MyAccount.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\MyTracks.aspx.cs">
+      <DependentUpon>MyTracks.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\MyTracks.aspx.designer.cs">
+      <DependentUpon>MyTracks.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\NewPageTemplate.aspx.cs">
+      <DependentUpon>NewPageTemplate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\NewPageTemplate.aspx.designer.cs">
+      <DependentUpon>NewPageTemplate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\PublicProfilePage.aspx.cs">
+      <DependentUpon>PublicProfilePage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\PublicProfilePage.aspx.designer.cs">
+      <DependentUpon>PublicProfilePage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\PublicProfilePageGenerator.aspx.cs">
+      <DependentUpon>PublicProfilePageGenerator.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\PublicProfilePageGenerator.aspx.designer.cs">
+      <DependentUpon>PublicProfilePageGenerator.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\PublicProfilePageTemp.aspx.cs">
+      <DependentUpon>PublicProfilePageTemp.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\PublicProfilePageTemp.aspx.designer.cs">
+      <DependentUpon>PublicProfilePageTemp.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Register.aspx.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Register.aspx.designer.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\ImgUpload.aspx.cs">
+      <DependentUpon>ImgUpload.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\ImgUpload.aspx.designer.cs">
+      <DependentUpon>ImgUpload.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\VideoInfo.aspx.cs">
+      <DependentUpon>VideoInfo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\VideoInfo.aspx.designer.cs">
+      <DependentUpon>VideoInfo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\VideoUpload.aspx.cs">
+      <DependentUpon>VideoUpload.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\VideoUpload.aspx.designer.cs">
+      <DependentUpon>VideoUpload.aspx</DependentUpon>
+    </Compile>
+    <Content Include="App_Code\CountryFlagReaderCS.cs" />
+    <Compile Include="ContactForm\ContactFormLI.aspx.cs">
+      <DependentUpon>ContactFormLI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ContactForm\ContactFormLI.aspx.designer.cs">
+      <DependentUpon>ContactFormLI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ContactForm\ContactFormLO.ascx.cs">
+      <DependentUpon>ContactFormLO.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ContactForm\ContactFormLO.ascx.designer.cs">
+      <DependentUpon>ContactFormLO.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="ContactForm\ContactFormLO.aspx.cs">
+      <DependentUpon>ContactFormLO.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ContactForm\ContactFormLO.aspx.designer.cs">
+      <DependentUpon>ContactFormLO.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ContactForm\ContactFormSuccess.aspx.cs">
+      <DependentUpon>ContactFormSuccess.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ContactForm\ContactFormSuccess.aspx.designer.cs">
+      <DependentUpon>ContactFormSuccess.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Error.aspx.cs">
+      <DependentUpon>Error.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Error.aspx.designer.cs">
+      <DependentUpon>Error.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="errors.aspx.cs">
+      <DependentUpon>errors.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="errors.aspx.designer.cs">
+      <DependentUpon>errors.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ExtraContent1.ascx.cs">
+      <DependentUpon>ExtraContent1.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ExtraContent1.ascx.designer.cs">
+      <DependentUpon>ExtraContent1.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Faq.aspx.cs">
+      <DependentUpon>Faq.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Faq.aspx.designer.cs">
+      <DependentUpon>Faq.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FlagDiv.aspx.cs">
+      <DependentUpon>FlagDiv.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Main.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Main.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="NewTrackInfo.aspx.cs">
+      <DependentUpon>NewTrackInfo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="NewTrackInfo.aspx.designer.cs">
+      <DependentUpon>NewTrackInfo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pagine di prova\LoginTest.aspx.cs">
+      <DependentUpon>LoginTest.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pagine di prova\LoginTest.aspx.designer.cs">
+      <DependentUpon>LoginTest.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pagine di prova\PopupLoginControl.ascx.cs">
+      <DependentUpon>PopupLoginControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pagine di prova\PopupLoginControl.ascx.designer.cs">
+      <DependentUpon>PopupLoginControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Pagine di prova\ProvaUrl.aspx.cs">
+      <DependentUpon>ProvaUrl.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pagine di prova\ProvaUrl.aspx.designer.cs">
+      <DependentUpon>ProvaUrl.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pagine di prova\TempCode.aspx.cs">
+      <DependentUpon>TempCode.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pagine di prova\TempCode.aspx.designer.cs">
+      <DependentUpon>TempCode.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pagine di prova\TempCode2.aspx.cs">
+      <DependentUpon>TempCode2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pagine di prova\TempCode2.aspx.designer.cs">
+      <DependentUpon>TempCode2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pagine di prova\TempCode3.aspx.cs">
+      <DependentUpon>TempCode3.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pagine di prova\TempCode3.aspx.designer.cs">
+      <DependentUpon>TempCode3.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pagine di prova\TempCode3ascx.ascx.cs">
+      <DependentUpon>TempCode3ascx.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pagine di prova\TempCode3ascx.ascx.designer.cs">
+      <DependentUpon>TempCode3ascx.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Site.Master.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site.Master.designer.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+    </Compile>
+    <Compile Include="TrackPage.aspx.cs">
+      <DependentUpon>TrackPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TrackPage.aspx.designer.cs">
+      <DependentUpon>TrackPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\CountryFlag.ascx.cs">
+      <DependentUpon>CountryFlag.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\CountryFlag.ascx.designer.cs">
+      <DependentUpon>CountryFlag.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\NewPageTemplate\InputWinVideos.ascx.cs">
+      <DependentUpon>InputWinVideos.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\NewPageTemplate\InputWinVideos.ascx.designer.cs">
+      <DependentUpon>InputWinVideos.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\NewPageTemplate\SectionDescription.ascx.cs">
+      <DependentUpon>SectionDescription.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\NewPageTemplate\SectionDescription.ascx.designer.cs">
+      <DependentUpon>SectionDescription.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\NewPageTemplate\SectionMap.ascx.cs">
+      <DependentUpon>SectionMap.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\NewPageTemplate\SectionMap.ascx.designer.cs">
+      <DependentUpon>SectionMap.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\NewPageTemplate\SectionPictures.ascx.cs">
+      <DependentUpon>SectionPictures.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\NewPageTemplate\SectionPictures.ascx.designer.cs">
+      <DependentUpon>SectionPictures.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\NewPageTemplate\SectionRadios.ascx.cs">
+      <DependentUpon>SectionRadios.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\NewPageTemplate\SectionRadios.ascx.designer.cs">
+      <DependentUpon>SectionRadios.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\NewPageTemplate\SectionTitleDescr.ascx.cs">
+      <DependentUpon>SectionTitleDescr.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\NewPageTemplate\SectionTitleDescr.ascx.designer.cs">
+      <DependentUpon>SectionTitleDescr.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\NewPageTemplate\SectionVideos.ascx.cs">
+      <DependentUpon>SectionVideos.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\NewPageTemplate\SectionVideos.ascx.designer.cs">
+      <DependentUpon>SectionVideos.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\RadioPlayerGuest.ascx.cs">
+      <DependentUpon>RadioPlayerGuest.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\RadioPlayerGuest.ascx.designer.cs">
+      <DependentUpon>RadioPlayerGuest.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\VideoPageCode.ascx.cs">
+      <DependentUpon>VideoPageCode.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\VideoPageCode.ascx.designer.cs">
+      <DependentUpon>VideoPageCode.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\VideoPageCodeB.ascx.cs">
+      <DependentUpon>VideoPageCodeB.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\VideoPageCodeB.ascx.designer.cs">
+      <DependentUpon>VideoPageCodeB.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\VideoPageCodeC.ascx.cs">
+      <DependentUpon>VideoPageCodeC.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\VideoPageCodeC.ascx.designer.cs">
+      <DependentUpon>VideoPageCodeC.ascx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="Images\b02532c9-8260-4b74-9bda-9d5d9b1f8472\Large\" />
+    <Folder Include="Images\b02532c9-8260-4b74-9bda-9d5d9b1f8472\Medium\" />
+    <Folder Include="Images\b02532c9-8260-4b74-9bda-9d5d9b1f8472\Thumb\" />
+    <Folder Include="Images\c96dd71f-dd7d-4755-b60e-5eeef52a90f1\Large\" />
+    <Folder Include="Images\c96dd71f-dd7d-4755-b60e-5eeef52a90f1\Medium\" />
+    <Folder Include="Images\c96dd71f-dd7d-4755-b60e-5eeef52a90f1\Thumb\" />
+    <Folder Include="Images\fc293dc1-b630-4c70-9d8d-a5cd790cb7ba\Large\" />
+    <Folder Include="Images\fc293dc1-b630-4c70-9d8d-a5cd790cb7ba\Medium\" />
+    <Folder Include="Images\fc293dc1-b630-4c70-9d8d-a5cd790cb7ba\Thumb\" />
+    <Folder Include="Images\fdc9ccdd-4666-4dfa-89fc-07c0f461cae3\Large\" />
+    <Folder Include="Images\fdc9ccdd-4666-4dfa-89fc-07c0f461cae3\Medium\" />
+    <Folder Include="Images\fdc9ccdd-4666-4dfa-89fc-07c0f461cae3\Thumb\" />
+    <Folder Include="obj\Debug\TempPE\" />
+    <Folder Include="Old_App_Code\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Account\Web.config" />
+    <Content Include="Site.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin_old\AjaxControlToolkit.dll.refresh" />
+    <None Include="bin_old\AntiXSSLibrary.dll.refresh" />
+    <None Include="bin_old\HtmlSanitizationLibrary.dll.refresh" />
+    <None Include="bin_old\SanitizerProviders.dll.refresh" />
+    <None Include="Images\2439DBE2-F661-438F-88D5-BA8A00959494\ExtraPictures\ExtraPictures.7z" />
+    <None Include="Images\2439DBE2-F661-438F-88D5-BA8A00959494\ExtraPictures\small\_vti_cnf.log" />
+    <None Include="Images\2439DBE2-F661-438F-88D5-BA8A00959494\ExtraPictures\_vti_cnf.log" />
+    <None Include="Images\2439DBE2-F661-438F-88D5-BA8A00959494\Large\_vti_cnf.log" />
+    <None Include="Images\2439DBE2-F661-438F-88D5-BA8A00959494\Medium\_vti_cnf.log" />
+    <None Include="Images\2439DBE2-F661-438F-88D5-BA8A00959494\Thumb\_vti_cnf.log" />
+    <None Include="Images\2439DBE2-F661-438F-88D5-BA8A00959494\_vti_cnf.log" />
+    <None Include="Images\2FABB6A4-185F-4D64-BDEA-842F816AD497\Large\_vti_cnf.log" />
+    <None Include="Images\2FABB6A4-185F-4D64-BDEA-842F816AD497\Medium\_vti_cnf.log" />
+    <None Include="Images\2FABB6A4-185F-4D64-BDEA-842F816AD497\Thumb\_vti_cnf.log" />
+    <None Include="Images\2FABB6A4-185F-4D64-BDEA-842F816AD497\_vti_cnf.log" />
+    <None Include="Images\4EDAD9B3-ADE3-4A69-8AE6-69862BB5D0EA\Large\_vti_cnf.log" />
+    <None Include="Images\4EDAD9B3-ADE3-4A69-8AE6-69862BB5D0EA\Medium\_vti_cnf.log" />
+    <None Include="Images\4EDAD9B3-ADE3-4A69-8AE6-69862BB5D0EA\Thumb\_vti_cnf.log" />
+    <None Include="Images\4EDAD9B3-ADE3-4A69-8AE6-69862BB5D0EA\_vti_cnf.log" />
+    <None Include="Images\5848AD25-2664-465D-A658-081D262FE99A\Large\_vti_cnf.log" />
+    <None Include="Images\5848AD25-2664-465D-A658-081D262FE99A\Medium\_vti_cnf.log" />
+    <None Include="Images\5848AD25-2664-465D-A658-081D262FE99A\Thumb\_vti_cnf.log" />
+    <None Include="Images\5848AD25-2664-465D-A658-081D262FE99A\_vti_cnf.log" />
+    <None Include="Images\84D35CF4-C9E9-499E-BD6E-287B3EBCBC75\Large\_vti_cnf.log" />
+    <None Include="Images\84D35CF4-C9E9-499E-BD6E-287B3EBCBC75\Medium\_vti_cnf.log" />
+    <None Include="Images\84D35CF4-C9E9-499E-BD6E-287B3EBCBC75\Thumb\_vti_cnf.log" />
+    <None Include="Images\84D35CF4-C9E9-499E-BD6E-287B3EBCBC75\_vti_cnf.log" />
+    <None Include="Images\8C564D72-C8B6-4217-BA4F-C2C7E2C17AC5\Large\_vti_cnf.log" />
+    <None Include="Images\8C564D72-C8B6-4217-BA4F-C2C7E2C17AC5\Medium\_vti_cnf.log" />
+    <None Include="Images\8C564D72-C8B6-4217-BA4F-C2C7E2C17AC5\Thumb\_vti_cnf.log" />
+    <None Include="Images\8C564D72-C8B6-4217-BA4F-C2C7E2C17AC5\_vti_cnf.log" />
+    <None Include="Images\94FB8A70-BDB4-487A-BFF8-152FFC640D19\Large\_vti_cnf.log" />
+    <None Include="Images\94FB8A70-BDB4-487A-BFF8-152FFC640D19\Medium\_vti_cnf.log" />
+    <None Include="Images\94FB8A70-BDB4-487A-BFF8-152FFC640D19\Thumb\_vti_cnf.log" />
+    <None Include="Images\94FB8A70-BDB4-487A-BFF8-152FFC640D19\_vti_cnf.log" />
+    <None Include="Images\A88F25A2-514A-4F45-9A49-E8C8E525CA6F\Large\_vti_cnf.log" />
+    <None Include="Images\A88F25A2-514A-4F45-9A49-E8C8E525CA6F\Medium\_vti_cnf.log" />
+    <None Include="Images\A88F25A2-514A-4F45-9A49-E8C8E525CA6F\Thumb\_vti_cnf.log" />
+    <None Include="Images\A88F25A2-514A-4F45-9A49-E8C8E525CA6F\_vti_cnf.log" />
+    <None Include="Images\B9EBE203-3A55-4F38-A9F8-18165DE733BE\Large\_vti_cnf.log" />
+    <None Include="Images\B9EBE203-3A55-4F38-A9F8-18165DE733BE\Medium\_vti_cnf.log" />
+    <None Include="Images\B9EBE203-3A55-4F38-A9F8-18165DE733BE\Thumb\_vti_cnf.log" />
+    <None Include="Images\B9EBE203-3A55-4F38-A9F8-18165DE733BE\_vti_cnf.log" />
+    <None Include="Images\C491CFB0-6A21-42F4-AE41-7A35AF310DD1\Large\_vti_cnf.log" />
+    <None Include="Images\C491CFB0-6A21-42F4-AE41-7A35AF310DD1\Medium\_vti_cnf.log" />
+    <None Include="Images\C491CFB0-6A21-42F4-AE41-7A35AF310DD1\Thumb\_vti_cnf.log" />
+    <None Include="Images\C491CFB0-6A21-42F4-AE41-7A35AF310DD1\_vti_cnf.log" />
+    <None Include="Images\C6C87476-53B5-4092-9E5A-0B71ECBC0FEF\Large\_vti_cnf.log" />
+    <None Include="Images\C6C87476-53B5-4092-9E5A-0B71ECBC0FEF\Medium\_vti_cnf.log" />
+    <None Include="Images\C6C87476-53B5-4092-9E5A-0B71ECBC0FEF\Thumb\_vti_cnf.log" />
+    <None Include="Images\C6C87476-53B5-4092-9E5A-0B71ECBC0FEF\_vti_cnf.log" />
+    <None Include="Images\D565C143-2CB9-41B1-8522-AEEE0D5AD704\Large\_vti_cnf.log" />
+    <None Include="Images\D565C143-2CB9-41B1-8522-AEEE0D5AD704\Medium\_vti_cnf.log" />
+    <None Include="Images\D565C143-2CB9-41B1-8522-AEEE0D5AD704\Thumb\_vti_cnf.log" />
+    <None Include="Images\D565C143-2CB9-41B1-8522-AEEE0D5AD704\_vti_cnf.log" />
+    <None Include="jquery\development-bundle\demos\autocomplete\search.php" />
+    <None Include="jquery\development-bundle\demos\tabs\ajax\content3-slow.php" />
+    <None Include="jquery\development-bundle\demos\tabs\ajax\content4-broken.php" />
+    <None Include="Main.xsc">
+      <DependentUpon>Main.xsd</DependentUpon>
+    </None>
+    <None Include="Main.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Main.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Main.xss">
+      <DependentUpon>Main.xsd</DependentUpon>
+    </None>
+    <Content Include="ContactForm\Web.config" />
+    <None Include="Images for html\DefaultTransit\TransAlpina3.pdn" />
+    <None Include="obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <Content Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>65476</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

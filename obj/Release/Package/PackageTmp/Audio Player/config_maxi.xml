@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<config>
+  <param name="mp3" value="http%3A//85.239.108.31%3A80/mp3-64_hra-livem"/>
+  <param name="showstop" value="1"/>
+  <param name="showvolume" value="1"/>
+  <param name="showslider" value="0"/>
+</config>

@@ -1,0 +1,146 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" Inherits="SiteMaster" Codebehind="Site.master.cs" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head runat="server">
+    <title></title>
+    <link href="~/Styles/Site.css" rel="stylesheet" type="text/css" />
+    <asp:ContentPlaceHolder ID="HeadContent" runat="server">
+    </asp:ContentPlaceHolder>
+    <script type="text/javascript">
+
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-24864097-1']);
+        _gaq.push(['_trackPageview']);
+
+        (function () {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+
+</script>
+</head>
+<body style="background-color:#FFFAF5"><%--fff4ff--%>
+    <form runat="server">
+    <div class="page">
+        <div class="header">
+            <div class="title">
+            <br />
+                <table>
+                    <tr align="left">
+                        <td align="left">
+                            <asp:ImageButton ID="ImageButton1" runat="server" Height="78px" 
+                                ImageUrl="~/Images/logo mic ORIGINAL_cut.png" Width="300px"
+                                PostBackUrl="~/Default.aspx" />
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            
+            <div class="loginDisplay" style="color:Gray">
+                <asp:LoginView ID="HeadLoginView" runat="server" EnableViewState="false">
+                    <AnonymousTemplate>
+                        [ <a href="~/Account/Login.aspx" ID="HeadLoginStatus" runat="server" style="color:Gray;">Log In</a> ]
+                    </AnonymousTemplate>
+                    <LoggedInTemplate>
+                        Welcome <span class="bold"><asp:LoginName ID="HeadLoginName" runat="server" /></span>!
+                        <asp:ImageButton ID="ImageButton2" runat="server" ImageUrl="~/Images for html/Icons/emptyAvatarSmall.jpg" ToolTip="My account" PostBackUrl="~/Account/MyAccount.aspx" />
+                        [ <asp:LoginStatus ID="HeadLoginStatus" runat="server" LogoutAction="Redirect" LogoutText="Log Out" LogoutPageUrl="~/"/> ]
+                    </LoggedInTemplate>
+                </asp:LoginView>
+            </div>
+            <div class="masterMenu" style="color:Gray">                
+                <table>
+                    <tr>
+                        <td>
+                            <asp:LoginView ID="LoginView1" runat="server">
+                            <AnonymousTemplate>
+                                    <asp:Menu ID="NavigationMenu" runat="server" CssClass="menu" 
+                                        EnableViewState="false" IncludeStyleBlock="false" Orientation="Horizontal" 
+                                        StaticSubMenuIndent="16px">
+                                        <Items>
+                                            <asp:MenuItem NavigateUrl="~/Default.aspx" Text="Home" />
+                                            <asp:MenuItem NavigateUrl="~/About.aspx" Text="About" />
+                                            <asp:MenuItem NavigateUrl="~/NewTrackInfo.aspx" Text="Add a new track" />
+                                        </Items>
+                                    </asp:Menu>                           
+                            </AnonymousTemplate>
+                            <LoggedInTemplate>
+                                    <asp:Menu ID="NavigationMenu" runat="server" CssClass="menu" 
+                                        EnableViewState="false" IncludeStyleBlock="false" Orientation="Horizontal">
+                                        <Items>
+                                            <asp:MenuItem NavigateUrl="~/Default.aspx" Text="Home" />
+                                            <asp:MenuItem NavigateUrl="~/About.aspx" Text="About" />
+                                            <asp:MenuItem NavigateUrl="~/Account/MyTracks.aspx" Text="My tracks"></asp:MenuItem>
+                                            <asp:MenuItem NavigateUrl="~/Account/NewPageTemplate.aspx" Text="Add a new track" />
+                                        </Items>
+                                    </asp:Menu>                       
+                            </LoggedInTemplate>
+                                <RoleGroups>
+                                    <asp:RoleGroup Roles="deep_admin">
+                                        <ContentTemplate>
+                                            <asp:Menu ID="NavigationMenu" runat="server" CssClass="menu" 
+                                                EnableViewState="false" IncludeStyleBlock="false" Orientation="Horizontal">
+                                                <Items>
+                                                    <asp:MenuItem NavigateUrl="~/Default.aspx" Text="Home" />
+                                                    <asp:MenuItem NavigateUrl="~/Admin/ImgUpload.aspx" Text="Upload Images" />
+                                                </Items>
+                                            </asp:Menu>
+                                        </ContentTemplate>
+                                    </asp:RoleGroup>
+                                    <asp:RoleGroup Roles="Go!1w Go!1m Go!3m Go!6m Go!1y">
+                                        <ContentTemplate>
+                                            <asp:Menu ID="NavigationMenu" runat="server" CssClass="menu" 
+                                                EnableViewState="false" IncludeStyleBlock="false" Orientation="Horizontal">
+                                                <Items>
+                                                    <asp:MenuItem NavigateUrl="~/Default.aspx" Text="Home" />
+                                                    <asp:MenuItem NavigateUrl="~/About.aspx" Text="About" />
+                                                    <%--<asp:MenuItem NavigateUrl="~/Plans.aspx" Text="Plans" />--%>
+                                                </Items>
+                                            </asp:Menu>
+                                        </ContentTemplate>
+                                    </asp:RoleGroup>
+                                </RoleGroups>
+                            </asp:LoginView>
+                        </td>
+                    </tr>
+                </table>                
+            </div>
+        </div>         
+        <div class="hideSkiplink" style="padding:10px 0px;">
+            
+        </div>
+        <div><%--class="main" or class="greenBack"--%> 
+            <asp:ContentPlaceHolder ID="MainContent" runat="server"/>
+        </div>
+        <div class="clear">
+            <div id="navcontainer" class="hideSkiplink" style="padding:10px 0px;">
+                <ul  style="text-align: left; padding-left: 0px; list-style-type: none; margin-left: 0px;">
+                    <%--<li><a href="Faq.aspx">F.A.Q.</a></li>--%>
+                    <li><a href="#">        <asp:LoginView ID="ctlRightNavbar" runat="server">
+            <AnonymousTemplate><a href="ContactForm/ContactFormLO.aspx" class="navbar">
+                Contact</a>
+            </AnonymousTemplate>
+            <LoggedInTemplate><a href="ContactForm/ContactFormLI.aspx" class="navbar">
+                Contact</a>
+            </LoggedInTemplate>
+        </asp:LoginView></a></li>
+                    <li><!--<a href="">Plans</a>--></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>  
+        </div>
+    </div>
+    <div class="footer">
+      
+    </div>
+    </form>
+    <br />
+    <!--clicky analytics-->
+<script src="//static.getclicky.com/js" type="text/javascript"></script>
+<script type="text/javascript">    try { clicky.init(66459812); } catch (e) { }</script>
+<noscript><p><img alt="Clicky" width="1" height="1" src="//in.getclicky.com/66459812ns.gif" /></p></noscript>
+</body>
+</html>
